@@ -1,0 +1,13 @@
+.course-structure-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff; /* or any suitable background color */
+    width: 40%;
+    height: auto;
+    margin: 2rem auto;
+    padding: 20px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.42);
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+.creative-studio-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff; /* or any suitable background color */
+    width: 40%;
+    height: auto;
+    margin: 2rem auto;
+    border-right: solid 20px #333333;
+    text-align: center;
+}
+
+.text-section {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.text-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.text-section p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
+}

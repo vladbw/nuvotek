@@ -1,0 +1,41 @@
+.module-list-container {
+    display: flex;
+    margin: 0 10%;
+    justify-content: space-between; /* Even space between items */
+    align-items: center;            /* Align items vertically in the center */
+    height: max-content;
+    align-items: stretch; /* Stretch all items to the same height */
+}
+
+.single-module {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+ul {
+    list-style-type: none; /* Removes the bullets */
+    margin: 0;             /* Removes default margin */
+    padding: 0;            /* Removes default padding */
+}
+
+
+ul li {
+    display: flex;       /* Align SVG and text horizontally */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Space between items */
+    text-wrap: nowrap;
+}
+
+ul li svg {
+    margin: 0 8px; /* Space between SVG and text */
+}
+
+
+.single-module-item-list {
+    border-top: solid 1px #F5F5F5;
+    padding: 0.5rem;
+}

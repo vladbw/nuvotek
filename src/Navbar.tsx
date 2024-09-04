@@ -6,8 +6,7 @@ function Navbar() {
         <nav className="navbar">
             <Link to="/">
                 <div className="navbar__logo">
-            {/* <img src="path-to-logo" alt="Logo" /> */}
-                    LOGO
+                    <img src="./nuvotek_logo.png" alt="Logo" />
                 </div>
             </Link>
             <ul className="navbar__links">

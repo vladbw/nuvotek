@@ -1,0 +1,33 @@
+.category-nav {
+    background-color: #FF0000; /* Red background color */
+    overflow: hidden; /* Hide the overflow */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    padding: 15px 0;
+    margin: 2rem 0;
+}
+
+.category-nav__list {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    animation: scroll 15s linear infinite; /* Apply scrolling animation */
+}
+
+.category-nav__list li {
+    display: inline-block;
+    margin: 0 30px; /* Space between each item */
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Start the text outside the right side */
+    }
+    100% {
+        transform: translateX(-100%); /* Move the text to the left side */
+    }
+}
