@@ -1,5 +1,5 @@
 import React from 'react';
-import './CourseStructure.css';
+import './InfoBox.css';
 
 export type ButtonLink = 'inscriu' | 'planse';
 
@@ -11,10 +11,9 @@ interface InfoBoxProps {
 
 const InfoBox: React.FC<InfoBoxProps> = (props) => {
     return (
-        <div className="course-structure-section">
+        <div className="info-box">
                 <h2>
                     {props.title}
-                    
                 </h2>
                 <p>
                     {props.text}

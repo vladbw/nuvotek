@@ -1,4 +1,4 @@
-import InfoBox from "./CourseStructure";
+import InfoBox from "./InfoBox";
 import CreativeStudioSection from "./CreativeStudioSection";
 import InfoBar from "./InfoBar";
 import IntroSection from "./IntroSection";

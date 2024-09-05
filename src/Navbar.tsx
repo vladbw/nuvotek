@@ -17,7 +17,7 @@ function Navbar() {
                     <button className="navbar__button">MĂ ÎNSCRIU</button>
                 </div>
             </ul>
-    </nav>
+        </nav>
     );
   }
   
