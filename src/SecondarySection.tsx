@@ -1,5 +1,4 @@
 import React from 'react';
-import './IntroSection.css';
 
 const SecondarySection: React.FC = () => {
     return (

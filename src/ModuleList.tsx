@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './ModuleList.css';
 import CheckBoxIcon from './CheckboxIcon';
+import Slider from "react-slick";
 
 interface ILearningModule {
     title: string;
@@ -28,20 +29,52 @@ const ModuleList: React.FC = () => {
         }
     ];
 
-    return (
-        <div className="module-list-container">
-            {modules.map(module => 
-            <div className="single-module">
-                <h2>{module.title}</h2>
-                <p>{module.subTitle}</p>
-                <div className='single-module-item-list'>
-                    <ul>
-                        {module.learningOutcomes.map(learningOutcome => <li><CheckBoxIcon/>{learningOutcome}</li>)}
-                    </ul>
+    const sliderSettings = {
+        dots: true,
+        infinite: false,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      };
+      
+      const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+    
+      useEffect(() => {
+        window.addEventListener('resize', handleResize);
+        
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+    
+    const renderContents = () => {
+        return modules.map((module: ILearningModule, index) => 
+                <div className="single-module" key={`single-module-${index}`}>
+                    <h2>{module.title}</h2>
+                    <p>{module.subTitle}</p>
+                    <div className='single-module-item-list'>
+                        <ul>
+                            {module.learningOutcomes.map((learningOutcome, loIndex) => <li key={`single-module-outcome-${index}-${loIndex}`}><CheckBoxIcon/>{learningOutcome}</li>)}
+                        </ul>
+                    </div>
                 </div>
-            </div>)}
+                )
+    }
+
+    if (windowWidth <= 850) {
+        return <Slider {...sliderSettings}>
+                {renderContents()}
+        </Slider>
+    } else {
+    return <div className="module-list-container">
+            {renderContents()}
         </div>
-    );
+    }
+    
 }
 
 export default ModuleList;

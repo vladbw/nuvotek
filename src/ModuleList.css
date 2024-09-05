@@ -1,18 +1,29 @@
 .module-list-container {
     display: flex;
-    margin: 0 10%;
     justify-content: space-between; /* Even space between items */
     align-items: center;            /* Align items vertically in the center */
-    height: max-content;
     align-items: stretch; /* Stretch all items to the same height */
+
+    @media (min-width: 1000px) {
+        width: 70%;
+    }
+
+    margin: 0 auto;
+    gap: 10px;
 }
 
 .single-module {
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 20px;
     text-align: center;
+
+    @media (min-width: 850px) {
+        border-radius: 20px;
+        width: 30%;
+    }
+
+    flex-shrink: 1;
 }
 
 
