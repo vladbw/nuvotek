@@ -2,9 +2,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 20px;
     margin: 0 auto;
-    max-width: 850px;
+    padding: 0 20px;
+
+    @media (min-width: 1000px) {
+        width: 70%;
+        padding: 0px 0px;
+    }
+
+    box-sizing: border-box;
 }
 
 .content-section__text {
@@ -27,7 +33,6 @@
 }
 
 .content-section__text p {
-    font-size: 0.8rem;
     font-weight: 500;
     color: #212121;
     margin-bottom: 20px;

@@ -3,10 +3,11 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
     
     @media (min-width: 1000px) {
-        width: 60%; 
-        border-right: solid 20px #333333;
+        width: 70%; 
+        border-right: solid 50px #333333;
     }
 
     height: auto;
