@@ -1,15 +1,20 @@
 import InfoBox from "./InfoBox";
 import CreativeStudioSection from "./CreativeStudioSection";
 import InfoBar from "./InfoBar";
-import IntroSection from "./IntroSection";
+import InfoSectionWithPhoto from "./InfoSectionWithPhoto";
 import ModuleList from "./ModuleList";
-import SecondarySection from "./SecondarySection";
 import GallerySection from "./GallerySection";
 
 function HomePage() {
     return (
       <div className="homepage-container">
-        <IntroSection/>
+        <InfoSectionWithPhoto 
+          title="CURSURI CREATIVE"
+          subTitle="by Cristina Stănescu"
+          text="Cu o experiență de peste 15 ani, formăm tineri artiști pentru o carieră în domenii creative, pentru admiterea la facultate, în România sau în străinătate."
+          imgSrc="./intro_portrait.png"
+          imgAlt="Cristina Stanescu"
+        />
         <InfoBar/>
         <CreativeStudioSection/>
         <InfoBar/>
@@ -20,7 +25,12 @@ function HomePage() {
         />
         <ModuleList/>
         <InfoBar/>
-        <SecondarySection/>
+        <InfoSectionWithPhoto 
+          title="Cum se desfășoară cursurile Nuvotek?"
+          text="Cursurile la Nuvotek Academy by Cristina Stănescu se desfășoară fizic, la studioul nostru din Șoseaua Iancului, sau online, în funcție de locația cursantului. O ședință de curs durează 5 ore și se desfășoară o dată sau de două ori pe săptămână, în funcție de preferința cursantului."
+          imgSrc="./drawing_progress.png"
+          imgAlt="Drawing in progress"
+        />
         <InfoBox
           title="Cum evoluează cursanții Nuvotek?"
           buttonLink="planse" 

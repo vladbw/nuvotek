@@ -15,7 +15,7 @@
 
 .content-section__text {
     flex: 1;
-    max-width: 50%;
+    max-width: 48%;
 }
 
 .content-section__text h1 {
@@ -52,13 +52,14 @@
 .content-section__image {
     flex: 1;
     display: flex;
-    justify-content: center;
-    max-width: 50%;
+    justify-content: flex-end;
+    max-width: 48%;
 }
 
 .content-section__image img {
     max-width: 100%;
     height: auto;
     border-radius: 2px;
-    box-shadow: 10px 8px rgba(0, 0, 0, 0.9);
+    border-right: solid 10px #333333;
+    border-bottom: solid 10px #333333;
 }

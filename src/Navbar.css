@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
+    padding: 10px 20px;
     background-color: white;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     margin-bottom: 2rem;
@@ -15,17 +15,38 @@
     list-style-type: none;
     justify-content: space-around;
     width: 40%;
+
+    @media (max-width:1000px) {
+        display: none;
+    }
 }
 
 
 .navbar__links a {
-    text-decoration: none;
     color: #333;
     font-weight: bold;
+
+    text-decoration: none;
+    background-image: linear-gradient(to right, red 0%, red 100%);
+    background-position: 100% 100%; /* Start from the right */
+    background-repeat: no-repeat;
+    background-size: 0 2px; /* Initially no underline */
+    color: black; /* Text color */
+    padding-bottom: 2px; /* Spacing for the underline */
+    transition: background-size 0.3s ease-in-out, background-position 0.3s ease-in-out; /* Animate background-size and position */
+  
 }
 
+
+.navbar__links a:hover {
+    background-size: 100% 2px; /* Expand the underline on hover */
+}
+
+/*Button styles*/
+
 .navbar__cta .navbar__button {
-    background-color: #FF0000; /* Red color */
+    position: relative;  /* Allows the pseudo-element to be positioned inside */
+    background-color: #FF0000; /* Initial background color */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -33,9 +54,32 @@
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
-    text-wrap: nowrap;
+    overflow: hidden; /* Ensure pseudo-element stays within the button bounds */
+    z-index: 1; /* Keep text on top */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.navbar__cta .navbar__button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(121, 0, 0, 0.71); /* Hover background color */
+    border-radius: 50%; /* Makes it round for the expanding effect */
+    z-index: -1; /* Keep it behind the text */
+    transition: width 0.5s ease, height 0.5s ease, top 0.5s ease, left 0.5s ease; /* Smooth grow effect */
+    transform: translate(-50%, -50%); /* Center the pseudo-element */
+}
+
+.navbar__cta .navbar__button:hover::before {
+    width: 300%;
+    height: 300%;
+    top: 50%;
+    left: 50%;
 }
 
 .navbar__cta .navbar__button:hover {
-    opacity: 0.9;
+    color: white; /* Keep the text color white on hover */
 }

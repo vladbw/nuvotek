@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import './Navbar.css';
+import MobileNavbar from "./MobileNavbar";
 
 function Navbar() {
     return (
-        <nav className="navbar">
+        <>
+            <nav className="navbar">
             <Link to="/">
                 <div className="navbar__logo">
                     <img src="./nuvotek_logo.png" alt="Logo" />
@@ -17,7 +19,10 @@ function Navbar() {
                     <button className="navbar__button">MĂ ÎNSCRIU</button>
                 </div>
             </ul>
-        </nav>
+            <MobileNavbar/>
+            </nav>
+        </>
+
     );
   }
   

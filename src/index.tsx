@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import HomePage from './Homepage';
 import AboutUsPage from './AboutUsPage';
+import PlansePage from './PlansePage';
+import RezultatePage from './RezultatePage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
       {
         path: "/despre-noi",
         element: <AboutUsPage />,
+      },
+      {
+        path: "/planse",
+        element: <PlansePage />,
+      },
+      {
+        path: "/rezultate",
+        element: <RezultatePage />,
       }
     ],
   },
