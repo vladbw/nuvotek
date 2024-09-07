@@ -11,7 +11,7 @@
 
     opacity: 0;
 
-    background-color: rgba(245, 245, 245, 0.8);
+    background-color: rgba(245, 245, 245, 0.95);
 }
 
 .mobile-navbar-overlay-toggled {
@@ -21,7 +21,6 @@
 
 .mobile-navbar-toggle-button {
     z-index: 1000;
-    margin-right: 2rem;
 
     @media (min-width:1001px) {
         display: none;

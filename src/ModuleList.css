@@ -37,8 +37,11 @@ ul {
 ul li {
     display: flex;       /* Align SVG and text horizontally */
     align-items: center; /* Align items vertically */
-    margin-bottom: 10px; /* Space between items */
     text-wrap: nowrap;
+}
+
+ul .module-checkbox-item {
+    margin-bottom: 10px; /* Space between items */
 }
 
 ul li svg {
