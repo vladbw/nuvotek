@@ -32,6 +32,10 @@
         display: none;
     }
 
+    @media (min-width: 1000px) and (max-width: 1500px) {
+        width: 60%;
+      }
+
 }
 
 
@@ -71,6 +75,7 @@
     z-index: 1; /* Keep text on top */
     transition: color 0.3s ease-in-out; /* Smooth color transition */
     letter-spacing: 1px;
+    text-wrap: nowrap;
 }
 
 .navbar__cta .navbar__button::before {

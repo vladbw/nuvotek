@@ -21,6 +21,7 @@
     @media (min-width: 850px) {
         border-radius: 20px;
         width: 30%;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     flex-shrink: 1;
@@ -37,19 +38,26 @@ ul {
 ul li {
     display: flex;       /* Align SVG and text horizontally */
     align-items: center; /* Align items vertically */
-    text-wrap: nowrap;
 }
 
 ul .module-checkbox-item {
     margin-bottom: 10px; /* Space between items */
+    width: 100%;
 }
 
 ul li svg {
     margin: 0 8px; /* Space between SVG and text */
+    width: 10%;
 }
 
 
 .single-module-item-list {
     border-top: solid 1px #F5F5F5;
     padding: 0.5rem;
+    text-align: left;
+}
+
+li p{
+    margin: 0;
+    width: 100%;
 }

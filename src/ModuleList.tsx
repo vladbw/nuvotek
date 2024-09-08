@@ -58,7 +58,7 @@ const ModuleList: React.FC = () => {
                     <p>{module.subTitle}</p>
                     <div className='single-module-item-list'>
                         <ul>
-                            {module.learningOutcomes.map((learningOutcome, loIndex) => <li className='module-checkbox-item' key={`single-module-outcome-${index}-${loIndex}`}><CheckBoxIcon/>{learningOutcome}</li>)}
+                            {module.learningOutcomes.map((learningOutcome, loIndex) => <li className='module-checkbox-item' key={`single-module-outcome-${index}-${loIndex}`}><CheckBoxIcon/><p>{learningOutcome}</p></li>)}
                         </ul>
                     </div>
                 </div>
