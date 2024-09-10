@@ -1,0 +1,58 @@
+.contact-page-container {
+    width: 95%;
+    text-align: center;
+    text-wrap: pretty;
+
+    @media (min-width: 1000px) {
+        width: 70%; 
+    }
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 658px;
+}
+
+.contact-page-container h2:not(:first-of-type):not(:last-of-type) {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.contact-page-container h2:last-of-type {
+    color: red;
+    font-weight: 600;
+}
+
+.contact-page-container span {
+    border-bottom: 2px solid red;
+}
+
+.contact-page-container span:hover {
+    color: red;
+}
+
+.gm-ui-hover-effect {
+    display: none !important; /* This hides the close button */
+}
+
+
+.gm-style-iw {
+    width: auto !important;
+    max-width: 100% !important; /* Ensure the width fits content */
+    padding: 0;  /* Remove default padding */
+  }
+
+.custom-maps-info-box img {
+    margin: 0 auto;
+    width: 89px;
+    height: auto;
+}
+
+.custom-maps-info-box {
+    padding: 0;  /* Remove padding if there’s extra space */
+    text-align: center;
+    overflow: hidden;  /* Prevent overflow */
+}

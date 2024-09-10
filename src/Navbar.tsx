@@ -14,7 +14,7 @@ function Navbar() {
             <ul className="navbar__links">
                 <li><Link to="/despre-noi">Despre noi</Link></li>
                 <li><Link to="/planse">Planșe</Link></li>
-                <li><Link to="/rezultate">Contact</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
                 <li>
                     <div className="navbar__cta">
                         <button className="navbar__button">MĂ ÎNSCRIU</button>

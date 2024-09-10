@@ -19,7 +19,7 @@
 
 .about-us-container div {
     margin-bottom: 1rem;
-    text-align: center;
+    text-align: left;
 }
 
 .separator {
@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     @media (max-width: 1000px) {
         flex-direction: column;
     }
