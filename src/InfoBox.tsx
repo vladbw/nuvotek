@@ -7,14 +7,15 @@ interface InfoBoxProps {
     title: string;
     text: string;
     buttonLink: ButtonLink;
+    hasBackground?: boolean;
 }
 
 const InfoBox: React.FC<InfoBoxProps> = (props) => {
     return (
-        <div className="info-box">
-                <h2>
+        <div className={`info-box ${props.hasBackground ? 'info-box-with-bg' : ''}`} >
+                <h1>
                     {props.title}
-                </h2>
+                </h1>
                 <p>
                     {props.text}
                 </p>

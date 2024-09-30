@@ -4,14 +4,19 @@
     white-space: nowrap; /* Prevent text from wrapping to the next line */
     padding: 15px 0;
     margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    margin: 5rem 0;
 }
 
 .category-nav__list {
+    width: max-content;
     display: inline-block;
     padding: 0;
     margin: 0;
     list-style-type: none;
-    animation: scroll 15s linear infinite; /* Apply scrolling animation */
+    animation: scroll 10s linear infinite; /* Apply scrolling animation */
+    display: flex;
 }
 
 .category-nav__list li {
@@ -23,9 +28,11 @@
     text-transform: uppercase;
 }
 
+
+
 @keyframes scroll {
     0% {
-        transform: translateX(100%); /* Start the text outside the right side */
+        transform: translateX(140%); /* Start the text outside the right side */
     }
     100% {
         transform: translateX(-100%); /* Move the text to the left side */

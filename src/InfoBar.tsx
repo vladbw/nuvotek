@@ -2,6 +2,7 @@ import React from 'react';
 import './InfoBar.css';
 
 const InfoBar: React.FC = () => {
+
     return (
         <div className="category-nav">
             <ul className="category-nav__list">
