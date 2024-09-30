@@ -4,17 +4,35 @@ import InfoBar from "./InfoBar";
 import InfoSectionWithPhoto from "./InfoSectionWithPhoto";
 import ModuleList from "./ModuleList";
 import GallerySection from "./GallerySection";
+import InfoSectionWithPhotoMobile from "./InfoSectionWithPhotoMobile";
+import { useState, useEffect } from "react";
 
 function HomePage() {
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const InfoSectionComponent = windowWidth > 600 ? InfoSectionWithPhoto : InfoSectionWithPhotoMobile;
+
     return (
       <div className="homepage-container">
-        <InfoSectionWithPhoto 
+        <InfoSectionComponent
           title="CURSURI CREATIVE"
           subTitle="by Cristina Stănescu"
           text="Cu o experiență de peste 15 ani, formăm tineri artiști pentru o carieră în domenii creative, pentru admiterea la facultate, în România sau în străinătate."
           imgSrc="./intro_portrait.png"
           imgAlt="Cristina Stanescu"
-        />
+          />
         <InfoBar/>
         <CreativeStudioSection/>
         <InfoBar/>
@@ -25,7 +43,7 @@ function HomePage() {
         />
         <ModuleList/>
         <InfoBar/>
-        <InfoSectionWithPhoto 
+        <InfoSectionComponent 
           title="Cum se desfășoară cursurile Nuvotek?"
           text="Cursurile la Nuvotek Academy by Cristina Stănescu se desfășoară fizic, la studioul nostru din Șoseaua Iancului, sau online, în funcție de locația cursantului. O ședință de curs durează 5 ore și se desfășoară o dată sau de două ori pe săptămână, în funcție de preferința cursantului."
           imgSrc="./drawing_progress.png"

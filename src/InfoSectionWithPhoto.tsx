@@ -1,7 +1,7 @@
 import React from 'react';
 import './InfoSectionWithPhoto.css';
 
-interface InfoSectionWithPhotoProps {
+export interface InfoSectionWithPhotoProps {
     title: string;
     subTitle?: string;
     text: string;

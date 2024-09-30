@@ -1,0 +1,33 @@
+.content-section-mobile {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    img {
+        height: 350px;
+        border-radius: 2px;
+        border-right: solid 10px #333333;
+        border-bottom: solid 10px #333333;
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: #333;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #e63946;
+        margin-bottom: 20px;
+    }
+
+    p {
+        text-align: center;
+    }
+}
