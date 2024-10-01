@@ -6,6 +6,7 @@ import ModuleList from "./ModuleList";
 import GallerySection from "./GallerySection";
 import InfoSectionWithPhotoMobile from "./InfoSectionWithPhotoMobile";
 import { useState, useEffect } from "react";
+import TestimonialsSection from "./TestimonialsSection";
 
 function HomePage() {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
@@ -55,6 +56,8 @@ function HomePage() {
           buttonLink="planse" 
           text="Descoperă evoluția cursanților noștri în galeria de mai jos. De la modulul introductiv la care se descoperă epura, axonometria cu 3 corpuri sau perspectiva la 2 puncte de fugă, însoțită de materialitate, până la modulul avansat, la care cursanții dau dovadă de maturitate artistică și complexitate în ceea ce privește conceptele lor unice, fiecare planșă este dovada vie a pasiunii și dedicării lor."
         />
+        <InfoBar/>
+        <TestimonialsSection/>
         <InfoBar/>
         <GallerySection/>
       </div>

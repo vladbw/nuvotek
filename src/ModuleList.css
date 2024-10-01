@@ -1,7 +1,6 @@
 .module-list-container {
     display: flex;
     justify-content: space-between; /* Even space between items */
-    align-items: center;            /* Align items vertically in the center */
     align-items: stretch; /* Stretch all items to the same height */
 
     @media (min-width: 1000px) {
@@ -11,6 +10,21 @@
     margin: 0 auto;
     gap: 10px;
 }
+
+.module-list-container-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 90%;
+    margin: 0 auto;
+    gap: 3rem;
+
+    .single-module {
+        border-radius: 20px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+}
+
 
 .single-module {
     display: flex;

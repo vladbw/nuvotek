@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './ModuleList.css';
 import CheckBoxIcon from './CheckboxIcon';
-import Slider from "react-slick";
 
 interface ILearningModule {
     title: string;
@@ -29,14 +28,6 @@ const ModuleList: React.FC = () => {
         }
     ];
 
-    const sliderSettings = {
-        dots: true,
-        infinite: false,
-        speed: 700,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      };
-      
       const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
       const handleResize = () => {
@@ -65,16 +56,15 @@ const ModuleList: React.FC = () => {
                 )
     }
 
-    if (windowWidth <= 850) {
-        return <Slider {...sliderSettings}>
-                {renderContents()}
-        </Slider>
+    if (windowWidth <= 700) {
+        return <div className="module-list-container-vertical">
+        {renderContents()}
+    </div>
     } else {
     return <div className="module-list-container">
             {renderContents()}
         </div>
     }
-    
 }
 
 export default ModuleList;
