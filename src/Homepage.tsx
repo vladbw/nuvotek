@@ -3,10 +3,10 @@ import CreativeStudioSection from "./CreativeStudioSection";
 import InfoBar from "./InfoBar";
 import InfoSectionWithPhoto from "./InfoSectionWithPhoto";
 import ModuleList from "./ModuleList";
-import GallerySection from "./GallerySection";
 import InfoSectionWithPhotoMobile from "./InfoSectionWithPhotoMobile";
 import { useState, useEffect } from "react";
 import TestimonialsSection from "./TestimonialsSection";
+import { Gallery } from "./MiniGallery/Gallery";
 
 function HomePage() {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
@@ -59,7 +59,7 @@ function HomePage() {
         <InfoBar/>
         <TestimonialsSection/>
         <InfoBar/>
-        <GallerySection/>
+        <Gallery/>
       </div>
     );
   }
