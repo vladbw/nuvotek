@@ -28,7 +28,7 @@ function MobileNavbar() {
         <div className={'mobile-navbar-container'}>
             <Link to="/despre-noi" onClick={() => onMenuItemClick()}>Despre noi</Link>
             <Link to="/planse" onClick={() => onMenuItemClick()}>Planșe</Link>
-            <Link to="/rezultate" onClick={() => onMenuItemClick()}>Rezultate</Link>
+            <Link to="/contact" onClick={() => onMenuItemClick()}>Contact</Link>
         </div>
     </div>
     </>

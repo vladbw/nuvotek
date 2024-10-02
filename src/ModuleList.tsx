@@ -44,7 +44,7 @@ const ModuleList: React.FC = () => {
     
     const renderContents = () => {
         return modules.map((module: ILearningModule, index) => 
-                <div className="single-module" key={`single-module-${index}`}>
+                <div className="single-module box-shadow-nuvotek round-corners-nuvotek" key={`single-module-${index}`}>
                     <h2>{module.title}</h2>
                     <p>{module.subTitle}</p>
                     <div className='single-module-item-list'>
@@ -61,7 +61,7 @@ const ModuleList: React.FC = () => {
         {renderContents()}
     </div>
     } else {
-    return <div className="module-list-container">
+    return <div className="module-list-container width-70-large-res">
             {renderContents()}
         </div>
     }

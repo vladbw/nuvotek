@@ -4,8 +4,8 @@ import MobileNavbar from "./MobileNavbar";
 
 function Navbar() {
     return (
-        <div className="navbar-container">
-            <nav className="navbar">
+        <div className="navbar-container box-shadow-nuvotek">
+            <nav className="navbar width-70-large-res">
             <Link to="/">
                 <div className="navbar__logo">
                     <img src="./nuvotek_logo.png" alt="Logo" />

@@ -11,9 +11,9 @@ export interface InfoSectionWithPhotoProps {
 
 const InfoSectionWithPhoto: React.FC<InfoSectionWithPhotoProps> = (props) => {
     return (
-        <div className="content-section">
+        <div className="content-section width-70-large-res">
             <div className="content-section__text">
-                <h1>{props.title}</h1>
+                <h1 className='h1-nuvotek'>{props.title}</h1>
                 {props.subTitle ? <h2>{props.subTitle}</h2> : null}
                 <p>{props.text}</p>
                 <div className="navbar__cta">

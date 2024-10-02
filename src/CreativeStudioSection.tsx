@@ -3,9 +3,9 @@ import './CreativeStudioSection.css';
 
 const CreativeStudioSection: React.FC = () => {
     return (
-        <div className="creative-studio-section">
+        <div className="creative-studio-section width-70-large-res">
             <div className="text-section">
-                <h1>Mai mult decât un studio al creației</h1>
+                <h1 className='h1-nuvotek'>Mai mult decât un studio al creației</h1>
                 <p>
                     Nuvotek Academy by Cristina Stănescu este o comunitate adaptată tinerilor și stilului lor de viață, 
                     în care barierele învățământului formal sunt îndepărtate în vederea obținerii unei experiențe educaționale 

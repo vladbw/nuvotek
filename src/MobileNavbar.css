@@ -54,14 +54,13 @@
 
     text-align: center;
 
-}
-
-.mobile-navbar-container a {
-    text-decoration: none;
-    background-image: linear-gradient(to right, red 0%, red 100%);
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    background-size: 100% 2px; /* Adjust the underline thickness */
-    color: black; /* Text color */
-    padding-bottom: 2px; /* Spacing to create room for the underline */
+    a {
+        text-decoration: none;
+        background-image: linear-gradient(to right, red 0%, red 100%);
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 2px; 
+        color: black;
+        padding-bottom: 2px;
+    }
 }

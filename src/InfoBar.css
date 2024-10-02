@@ -1,34 +1,32 @@
 .category-nav {
-    background-color: #FF0000; /* Red background color */
-    overflow: hidden; /* Hide the overflow */
-    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    background-color: #FF0000; 
+    overflow: hidden; 
+    white-space: nowrap; 
     padding: 15px 0;
     margin: 2rem 0;
     width: 100%;
     display: flex;
     margin: 5rem 0;
+
+    .category-nav__list {
+        width: max-content;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        animation: scroll 10s linear infinite; 
+        display: flex;
+    
+        li {
+            display: inline-block;
+            margin: 0 30px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+    }
 }
-
-.category-nav__list {
-    width: max-content;
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    animation: scroll 10s linear infinite; /* Apply scrolling animation */
-    display: flex;
-}
-
-.category-nav__list li {
-    display: inline-block;
-    margin: 0 30px; /* Space between each item */
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-}
-
-
 
 @keyframes scroll {
     0% {

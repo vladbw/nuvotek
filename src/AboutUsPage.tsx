@@ -3,12 +3,12 @@ import './AboutUsPage.css';
 function AboutUsPage() {
     return (
       <div className="about-us-container">
-        <h1>Mai mult decât un studio al creației</h1>
+        <h1 className='h1-nuvotek'>Mai mult decât un studio al creației</h1>
         <h3>O comunitate adaptată stilului de viață al tinerilor</h3>
         <div>
           Nuvotek este un centru de pregătire, care are ca scop dezvoltarea abilităților artistice și care iși propune să revoluționeze procesul creativ, necesar experienței universitare.
         </div>
-        <h1>Misiunea noastră</h1>
+        <h1 className='h1-nuvotek'>Misiunea noastră</h1>
         <div>
           Este aceea de a oferi o educație corectă în artă, de a dezvolta tânărul cursant într-un adult responsabil și implicat în viitoarele probleme ale societății. Dacă tu crezi că vrei să devii un astfel de artist, cursurile au loc la studioul nostru situat la Piața Iancului. Te așteptăm să te alături uneia dintre grupele noastre zilnice!
         </div>
@@ -25,7 +25,7 @@ function AboutUsPage() {
         O fundație viguroasă umană dă cale liberă dezvoltării abilităților specifice domeniului ales. Comunitatea din care vei face parte, alături de noi și de mulți alții ca noi te va sprijini constant în consolidarea arhitecturii tale ca om-artist.
         </div>
         <div className="separator"/>
-        <h1>Meet the team</h1>
+        <h1 className='h1-nuvotek'>Meet the team</h1>
         <div className='team-info-section'>
           <div className='team-info-section-image-with-caption'>
             <img src='./team_cristina_stanescu.jpg' alt='team-cristina-stanescu'/>
@@ -60,7 +60,7 @@ function AboutUsPage() {
           </div>
         </div>
         <div className="separator"/>
-        <h1>Echipă tutori</h1>
+        <h1 className='h1-nuvotek'>Echipă tutori</h1>
         <div className='team-info-section'>
           <div className='team-info-section-image-with-caption'>
             <img src='./team_adriana_tomeci.jpg' alt='team-adriana-tomeci'/>

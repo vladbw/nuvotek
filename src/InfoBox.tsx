@@ -12,8 +12,8 @@ interface InfoBoxProps {
 
 const InfoBox: React.FC<InfoBoxProps> = (props) => {
     return (
-        <div className={`info-box ${props.hasBackground ? 'info-box-with-bg' : ''}`} >
-                <h1>
+        <div className={`width-70-large-res info-box ${props.hasBackground ? 'info-box-with-bg' : ''}`} >
+                <h1 className='h1-nuvotek'>
                     {props.title}
                 </h1>
                 <p>
