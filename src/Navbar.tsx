@@ -17,7 +17,7 @@ function Navbar() {
                 <li><Link to="/contact">Contact</Link></li>
                 <li>
                     <div className="navbar__cta">
-                        <button className="navbar__button">MĂ ÎNSCRIU</button>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5Vz11lTctGTbPK9jPH9xLVRwrZSud37PyFpFDUAxRS82pZw/viewform" target="_blank" rel="noreferrer"><button className="navbar__button">MĂ ÎNSCRIU</button></a>
                     </div>
                 </li>
             </ul>

@@ -1,29 +1,56 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Gallery.css';
 import { ImageModal } from './ImageModal';
+import { tabContents } from './GalleryImages';
+import Slider from 'react-slick';
 
-type Image = {
+export type Image = {
   id: number;
   src: string;
   alt: string;
+  thumbnailSrc: string;
 };
 
-type TabContent = {
-  label: string;
-  images: Image[];
-};
+interface ArrowProps {
+  className?: string;
+  style?: React.CSSProperties;
+  onClick?: () => void;
+}
 
-const tabContents: TabContent[] = [
-  { label: 'ARHITECTURĂ', images: [{ id: 1, src: '/team_adriana_tomeci.jpg', alt: 'Image 1' }, { id: 2, src: '/team_adriana_tomeci.jpg', alt: 'Image 2' }] },
-  { label: 'DESIGN INTERIOR', images: [{ id: 3, src: '/team_adriana_tomeci.jpg', alt: 'Image 3' }, { id: 4, src: '/team_adriana_tomeci.jpg', alt: 'Image 4' }] },
-  { label: 'FASHION DESIGN', images: [{ id: 5, src: '/team_adriana_tomeci.jpg', alt: 'Image 5' }, { id: 6, src: '/team_adriana_tomeci.jpg', alt: 'Image 6' }] },
-  { label: 'GAME DESIGN', images: [{ id: 7, src: '/team_cristina_stanescu.jpg', alt: 'Image 7' }, { id: 8, src: '/team_cristina_stanescu.jpg', alt: 'Image 8' }, { id: 11, src: '/team_cristina_stanescu.jpg', alt: 'Image 11' }],},
-  { label: 'SCENOGRAFIE', images: [{ id: 9, src: '/team_adriana_tomeci.jpg', alt: 'Image 9' }, { id: 10, src: '/team_adriana_tomeci.jpg', alt: 'Image 10' }] },
-];
+const CustomPrevArrow: React.FC<ArrowProps> = ({ className, style, onClick }) => (
+  <div
+    className={className}
+    style={{
+      ...style,
+      display: 'block',
+      left: '20px',
+      zIndex: 1,
+    }}
+    onClick={onClick}
+  />
+);
+
+const CustomNextArrow: React.FC<ArrowProps> = ({ className, style, onClick }) => (
+  <div
+    className={className}
+    style={{
+      ...style,
+      display: 'block',
+      right: '20px', 
+      zIndex: 1,
+    }}
+    onClick={onClick}
+  />
+);
 
 export const Gallery: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState<number>(0);
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
 
   const handleTabClick = (index: number) => {
     setSelectedTab(index);
@@ -37,36 +64,95 @@ export const Gallery: React.FC = () => {
     setSelectedImage(null);
   };
 
-  return (
-    <div className="gallery-container">
-       <h1 className='h1-nuvotek'>Galerie</h1>
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const renderTabs = () => {
+    return (
       <div className="tabs">
-        {tabContents.map((tab, index) => (
-          <button
-            key={index}
-            className={`box-shadow-nuvotek tab ${selectedTab === index ? 'active' : ''}`}
-            onClick={() => handleTabClick(index)}
-          >
-            {tab.label}
-          </button>
-        ))}
-      </div>
-
-      <div className="images">
-        {tabContents[selectedTab].images.map((image) => (
-          <img
-            key={image.id}
-            src={image.src}
-            alt={image.alt}
-            className="image box-shadow-nuvotek"
-            onClick={() => handleImageClick(image)}
-          />
-        ))}
-      </div>
-
-      {selectedImage && (
-        <ImageModal image={selectedImage} onClose={closeModal} />
-      )}
+      {tabContents.map((tab, index) => (
+        <button
+          key={index}
+          className={`box-shadow-nuvotek tab ${selectedTab === index ? 'active' : ''}`}
+          onClick={() => handleTabClick(index)}
+        >
+          {tab.label}
+        </button>
+      ))}
     </div>
-  );
+    );
+  }
+
+  const renderTitle = () => {
+    return (
+      <h1 className='h1-nuvotek'>
+        Galerie
+      </h1>
+    );
+  }
+
+  const renderImages = (className: string) => {
+    return (
+      tabContents[selectedTab].images.map((image) => (
+        <img
+          key={image.id}
+          src={image.thumbnailSrc}
+          alt={image.alt}
+          className={className}
+          onClick={() => handleImageClick(image)}
+        />
+      ))
+    );
+  }
+
+  const renderModal = () => {
+    return selectedImage && <ImageModal image={selectedImage} onClose={closeModal} />;
+  }
+
+  const renderMobileComponent = () => {
+    let sliderSettings = {
+      infinite: true,
+      speed: 500, 
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: <CustomPrevArrow />,
+      nextArrow: <CustomNextArrow />,
+    };
+
+    return (
+          <div className='gallery-container-mobile'>
+            {renderTitle()}
+            {renderTabs()}
+            <Slider {...sliderSettings}>
+              {renderImages('')}
+            </Slider>
+            {renderModal()}
+          </div>
+    );
+  }
+
+  const renderPCComponent = () => {
+    return (
+      <div className="gallery-container width-70-large-res" id='homepage-gallery'>
+          {renderTitle()}
+          {renderTabs()}
+          <div className="images">
+          {/* box-shadow-nuvotek */}
+            {renderImages('image')}
+          </div>
+          {renderModal()}
+      </div>
+    );
+  }
+
+  if (windowWidth >= 770) {
+    return renderPCComponent();
+  } else {
+    return renderMobileComponent();
+  }
 };

@@ -1,8 +1,8 @@
+import { Gallery } from "./MiniGallery/Gallery";
+
 function PlansePage() {
     return (
-      <div className="planse-page-container">
-        PLANSE CONTENT
-      </div>
+        <Gallery/>
     );
   }
   

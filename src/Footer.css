@@ -18,7 +18,7 @@
         align-items: center;
         color: black;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         
         p {
             margin: 0;

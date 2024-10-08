@@ -1,16 +1,24 @@
-/* src/components/Gallery.css */
 .gallery-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    margin: 0 auto;
 
     h1 {
       margin-top: 0;
       margin-bottom: 2rem;
     }
 
+}
+
+.gallery-container-mobile {
+  margin: 0 auto;
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
   }
+}
   
   .tabs {
     display: flex;
@@ -41,7 +49,7 @@
   }
   
   .image {
-    margin: 10px;
+    /* margin: 10px; */
     width: 200px;
     height: 150px;
     object-fit: cover;
@@ -67,3 +75,8 @@
     }
   }
   
+/* Override styles for slick slider arrows */
+  .slick-prev:before, .slick-next:before {
+    color: #ff0000a8 !important;
+    font-size: 30px;
+  }
