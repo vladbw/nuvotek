@@ -80,8 +80,8 @@ function TestimonialsSection() {
     if (windowWidth > 700) {
               return <div className="testimonials-container width-70-large-res">
                     <h1 className='h1-nuvotek'>Testimoniale</h1>
-                    {chunks.map(chunk => <div className='testimonials-chunk'>
-                        {chunk.map(testiomnial => <div className='testimonial-single box-shadow-nuvotek round-corners-nuvotek'>
+                    {chunks.map((chunk, id) => <div className='testimonials-chunk' key={`testimonial-chunk-${id}`}>
+                        {chunk.map(testiomnial => <div className='testimonial-single box-shadow-nuvotek round-corners-nuvotek' key={'testimonial-' + testiomnial.name}> 
                             <p className='testimonial-text-par'>{testiomnial.text}</p>
                             <p className='testimonial-name-par'>{testiomnial.name}</p>
                         </div>)}
@@ -91,7 +91,7 @@ function TestimonialsSection() {
             return  <div className="testimonials-container-mobile">
                 <h1 className='h1-nuvotek'>Testimoniale</h1>
                 <Slider {...sliderSettings}>
-                        {testimonials.map(testiomnial => <div className='testimonial-single-mobile'>
+                        {testimonials.map(testiomnial => <div className='testimonial-single-mobile' key={'testimonial-' + testiomnial.name}> 
                             <p className='testimonial-text-par'>{testiomnial.text}</p>
                             <p className='testimonial-name-par'>{testiomnial.name}</p>
                         </div>)}

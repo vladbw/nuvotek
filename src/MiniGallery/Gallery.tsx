@@ -11,13 +11,13 @@ export type Image = {
   thumbnailSrc: string;
 };
 
-interface ArrowProps {
+export interface ArrowProps {
   className?: string;
   style?: React.CSSProperties;
   onClick?: () => void;
 }
 
-const CustomPrevArrow: React.FC<ArrowProps> = ({ className, style, onClick }) => (
+export const CustomPrevArrow: React.FC<ArrowProps> = ({ className, style, onClick }) => (
   <div
     className={className}
     style={{
@@ -30,7 +30,7 @@ const CustomPrevArrow: React.FC<ArrowProps> = ({ className, style, onClick }) =>
   />
 );
 
-const CustomNextArrow: React.FC<ArrowProps> = ({ className, style, onClick }) => (
+export const CustomNextArrow: React.FC<ArrowProps> = ({ className, style, onClick }) => (
   <div
     className={className}
     style={{
@@ -111,7 +111,7 @@ export const Gallery: React.FC = () => {
   }
 
   const renderModal = () => {
-    return selectedImage && <ImageModal image={selectedImage} onClose={closeModal} />;
+    return selectedImage && <ImageModal tabNumber={selectedTab} image={selectedImage} onClose={closeModal} />;
   }
 
   const renderMobileComponent = () => {
