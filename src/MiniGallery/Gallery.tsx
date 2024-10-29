@@ -101,7 +101,7 @@ export const Gallery: React.FC = () => {
       tabContents[selectedTab].images.map((image) => (
         <img
           key={image.id}
-          src={image.thumbnailSrc}
+          src={windowWidth >= 770 ? image.thumbnailSrc : image.src}
           alt={image.alt}
           className={className}
           onClick={() => handleImageClick(image)}
