@@ -79,17 +79,17 @@ export const tabContents: TabContent[] = [
         { id: 36, src: './FASHION DESIGN/Untitled-61.png', thumbnailSrc: './FASHION DESIGN/Untitled-61-thumbnail.png', alt: 'Image 36' }
     ]},
     { label: 'GAME DESIGN', images: [
-        { id: 41, src: './GAME & CHARACTER DESIGN/Untitled-16.png', thumbnailSrc: './GAME & CHARACTER DESIGN/Untitled-16-thumbnail.png', alt: 'Image 41' }, 
-        { id: 42, src: './GAME & CHARACTER DESIGN/Untitled-37.png', thumbnailSrc: './GAME & CHARACTER DESIGN/Untitled-37-thumbnail.png', alt: 'Image 42' }, 
-        { id: 43, src: './GAME & CHARACTER DESIGN/Untitled-38.png', thumbnailSrc: './GAME & CHARACTER DESIGN/Untitled-38-thumbnail.png', alt: 'Image 43' },
-        { id: 44, src: './GAME & CHARACTER DESIGN/Untitled-39.png', thumbnailSrc: './GAME & CHARACTER DESIGN/Untitled-39-thumbnail.png', alt: 'Image 44' },
-        { id: 45, src: './GAME & CHARACTER DESIGN/Untitled-40.png', thumbnailSrc: './GAME & CHARACTER DESIGN/Untitled-40-thumbnail.png', alt: 'Image 45' },
-        { id: 46, src: './GAME & CHARACTER DESIGN/Untitled-41.png', thumbnailSrc: './GAME & CHARACTER DESIGN/Untitled-41-thumbnail.png', alt: 'Image 46' },
-        { id: 47, src: './GAME & CHARACTER DESIGN/Untitled-42.png', thumbnailSrc: './GAME & CHARACTER DESIGN/Untitled-42-thumbnail.png', alt: 'Image 47' },
-        { id: 48, src: './GAME & CHARACTER DESIGN/Untitled-43.png', thumbnailSrc: './GAME & CHARACTER DESIGN/Untitled-43-thumbnail.png', alt: 'Image 48' },
-        { id: 49, src: './GAME & CHARACTER DESIGN/Untitled-44.png', thumbnailSrc: './GAME & CHARACTER DESIGN/Untitled-44-thumbnail.png', alt: 'Image 49' },
-        { id: 410, src: './GAME & CHARACTER DESIGN/Untitled-45.png', thumbnailSrc: './GAME & CHARACTER DESIGN/Untitled-45-thumbnail.png', alt: 'Image 410' },
-        { id: 411, src: './GAME & CHARACTER DESIGN/Untitled-50.png', thumbnailSrc: './GAME & CHARACTER DESIGN/Untitled-50-thumbnail.png', alt: 'Image 411' }
+        { id: 41, src: './GAME AND CHARACTER DESIGN/Untitled-16.png', thumbnailSrc: './GAME AND CHARACTER DESIGN/Untitled-16-thumbnail.png', alt: 'Image 41' }, 
+        { id: 42, src: './GAME AND CHARACTER DESIGN/Untitled-37.png', thumbnailSrc: './GAME AND CHARACTER DESIGN/Untitled-37-thumbnail.png', alt: 'Image 42' }, 
+        { id: 43, src: './GAME AND CHARACTER DESIGN/Untitled-38.png', thumbnailSrc: './GAME AND CHARACTER DESIGN/Untitled-38-thumbnail.png', alt: 'Image 43' },
+        { id: 44, src: './GAME AND CHARACTER DESIGN/Untitled-39.png', thumbnailSrc: './GAME AND CHARACTER DESIGN/Untitled-39-thumbnail.png', alt: 'Image 44' },
+        { id: 45, src: './GAME AND CHARACTER DESIGN/Untitled-40.png', thumbnailSrc: './GAME AND CHARACTER DESIGN/Untitled-40-thumbnail.png', alt: 'Image 45' },
+        { id: 46, src: './GAME AND CHARACTER DESIGN/Untitled-41.png', thumbnailSrc: './GAME AND CHARACTER DESIGN/Untitled-41-thumbnail.png', alt: 'Image 46' },
+        { id: 47, src: './GAME AND CHARACTER DESIGN/Untitled-42.png', thumbnailSrc: './GAME AND CHARACTER DESIGN/Untitled-42-thumbnail.png', alt: 'Image 47' },
+        { id: 48, src: './GAME AND CHARACTER DESIGN/Untitled-43.png', thumbnailSrc: './GAME AND CHARACTER DESIGN/Untitled-43-thumbnail.png', alt: 'Image 48' },
+        { id: 49, src: './GAME AND CHARACTER DESIGN/Untitled-44.png', thumbnailSrc: './GAME AND CHARACTER DESIGN/Untitled-44-thumbnail.png', alt: 'Image 49' },
+        { id: 410, src: './GAME AND CHARACTER DESIGN/Untitled-45.png', thumbnailSrc: './GAME AND CHARACTER DESIGN/Untitled-45-thumbnail.png', alt: 'Image 410' },
+        { id: 411, src: './GAME AND CHARACTER DESIGN/Untitled-50.png', thumbnailSrc: './GAME AND CHARACTER DESIGN/Untitled-50-thumbnail.png', alt: 'Image 411' }
     ]},
     {
         label: 'OUR STUDIO', images: [

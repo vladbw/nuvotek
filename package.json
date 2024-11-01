@@ -23,9 +23,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-base": "react-scripts build",
+    "zip-build": "7z a build-novtek.7z ./build/*",
+    "build": "npm run build-base && npm run zip-build"
   },
   "eslintConfig": {
     "extends": [
