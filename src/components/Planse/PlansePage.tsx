@@ -1,4 +1,4 @@
-import { Gallery } from "./MiniGallery/Gallery";
+import { Gallery } from "../Gallery/Gallery";
 
 function PlansePage() {
     return (

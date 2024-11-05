@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './components/App/App';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import HomePage from './Homepage';
-import AboutUsPage from './AboutUsPage';
-import PlansePage from './PlansePage';
-import ContactPage from './ContactPage';
+import HomePage from './components/Homepage/Homepage';
+import AboutUsPage from './components/AboutUs/AboutUsPage';
+import PlansePage from './components/Planse/PlansePage';
+import ContactPage from './components/ContactPage/ContactPage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -44,7 +43,3 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
