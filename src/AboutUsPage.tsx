@@ -113,26 +113,6 @@ function AboutUsPage() {
             </div>
           </div>
         </div>
-        <div className='team-info-section'>
-          <div className='team-info-section-text-body'>
-            <div>
-            Adara Cheleș este consultantul educațional din cadrul Nuvotek Studio. Cu ea vei lucra pe perioada consultanței, și te va ajuta să îți găsești universitatea și domeniul care ți se potrivește cel mai bine.
-            </div>
-            <div>
-            Adara și-a început activitatea de consultant după ce a aplicat și a intrat la University of Nottingham, unde își termină licența în arhitectură și masterul în inginerie sustenabilă după patru ani de studiu. De-a lungul timpului, a ajutat elevi să își împlinească visul de a studia în străinătate și a colaborat cu diferite universități și facultăți.
-            </div>
-            <div>
-            Dorința ei principală este aceea de a ajuta elevii să își aleagă un domeniu care li se potrivește și de a face procesul de admitere mult mai ușor și sigur pentru aceștia.
-            </div>
-            <div>
-            Pe langa facultate și consultanță, pasiunea ei este caritatea, motiv pentru care este implicată atât la nivel european cât și național sau local în diverse asociații. Astfel, cu ajutorul conexiunilor create, te va putea ajuta să îți găsești și tu pasiuni și activități extrașcolare în care te poți implica și care te pot forma ca viitor profesionist.
-            </div>
-          </div>
-          <div className='team-info-section-image-with-caption'>
-            <img src='./team_adara_cheles.jpg' alt='team-adara-cheles'/>
-            <div>Adara Cheleș, Consultant educațional</div>
-          </div>
-        </div>
       </div>
     );
   }
