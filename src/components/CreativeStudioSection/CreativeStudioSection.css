@@ -6,7 +6,7 @@
     box-sizing: border-box;
     
     height: auto;
-    margin: 5rem auto;
+    margin: 5rem auto 5rem auto;
     text-align: center;
 
     .text-section {
@@ -28,5 +28,6 @@
     /*Only display the thick border to the right on PC*/
     @media (min-width: 1000px) {
         border-right: solid 50px #333333;
+        margin: 5rem auto 10rem auto;
     }
 }
