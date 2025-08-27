@@ -7,6 +7,7 @@ import HomePage from './components/Homepage/Homepage';
 import AboutUsPage from './components/AboutUs/AboutUsPage';
 import PlansePage from './components/Planse/PlansePage';
 import ContactPage from './components/ContactPage/ContactPage';
+import "./i18n";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
