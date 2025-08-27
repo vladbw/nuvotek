@@ -6,8 +6,12 @@ import InfoSectionWithPhotoMobile from "../InfoSection/InfoSectionWithPhotoMobil
 import { useState, useEffect } from "react";
 import TestimonialsSection from "../Testimonials/TestimonialsSection";
 import { Gallery } from "../Gallery/Gallery";
+import { useTranslation } from "react-i18next";
+
 
 function HomePage() {
+  const translate = useTranslation().t;
+
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
   const handleResize = () => {
@@ -27,9 +31,9 @@ function HomePage() {
     return (
       <div className="homepage-container">
         <InfoSectionComponent
-          title="CURSURI CREATIVE"
+          title={translate("main_header")}
           subTitle="by Cristina Stănescu"
-          text="Cu o experiență de peste 15 ani, formăm tineri artiști pentru o carieră în domenii creative, pentru admiterea la facultate, în România sau în străinătate."
+          text={translate("main_header_text")}
           imgSrc="./intro_portrait.png"
           imgAlt="Cristina Stanescu"
           />
