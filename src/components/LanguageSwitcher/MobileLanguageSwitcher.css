@@ -1,0 +1,21 @@
+.mobile-lang-switcher {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+}
+
+.mobile-lang-option {
+  background: none;
+  border: none;
+  padding: 10px 0;
+  text-align: left;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.mobile-lang-option.active {
+  font-weight: bold;
+  text-decoration: underline;
+text-decoration-color: red;
+}

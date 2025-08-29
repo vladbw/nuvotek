@@ -3,6 +3,7 @@ import './Gallery.css';
 import { ImageModal } from './ImageModal';
 import { tabContents } from './GalleryImages';
 import Slider from 'react-slick';
+import { useTranslation } from 'react-i18next';
 
 export type Image = {
   id: number;
@@ -44,6 +45,8 @@ export const CustomNextArrow: React.FC<ArrowProps> = ({ className, style, onClic
 );
 
 export const Gallery: React.FC = () => {
+  const translate = useTranslation().t;
+
   const [selectedTab, setSelectedTab] = useState<number>(0);
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
@@ -81,7 +84,7 @@ export const Gallery: React.FC = () => {
           className={`box-shadow-nuvotek tab ${selectedTab === index ? 'active' : ''}`}
           onClick={() => handleTabClick(index)}
         >
-          {tab.label}
+          {translate(tab.label)}
         </button>
       ))}
     </div>
@@ -91,7 +94,7 @@ export const Gallery: React.FC = () => {
   const renderTitle = () => {
     return (
       <h1 className='h1-nuvotek'>
-        Galerie
+        {translate("gallery_title")}
       </h1>
     );
   }

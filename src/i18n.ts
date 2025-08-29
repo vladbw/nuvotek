@@ -10,9 +10,14 @@ i18n
       ro: { translation: ro },
       en: { translation: en }
     },
-    lng: "ro", // default language
-    fallbackLng: "en",
+    lng: localStorage.getItem("lang") || "ro",
+    fallbackLng: "ro",
     interpolation: { escapeValue: false }
+  });
+
+i18n
+  .on("languageChanged", (lng) => {
+    localStorage.setItem("lang", lng);
   });
 
 export default i18n;
