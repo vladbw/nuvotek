@@ -68,49 +68,105 @@ function AboutUsPage() {
           </div>
           <div className='team-info-section-text-body'>
             <div>
-            Adriana Tomeci este #NVK02 și este formatorul din cadrul modulelor 1 și 2. Ea a absolvit un program de licență și un masterat la Manchester School of Architecture. Cu toate acestea, arta a avut un loc special în inima ei. Adriana este o persoană multidisciplinar și caută mereu să învețe și să experimenteze prin diferite forme de comunicare vizuală. De la caiete de schițe la pânze, de la markere la uleiuri și, cel mai recent, artă digitală, design vestimentar sau regie creativă ea este într-o continuă dezvoltare ca artist și designer.
+              Adriana Tomeci este tutor la #NVK02 și formator pentru modulele 1 și 2. Absolventă a facultății de arhitectură, cu licență și master la Manchester School of Architecture din UK, Adriana a păstrat mereu arta aproape de suflet. Personalitate multidisciplinară, ea explorează constant diverse forme de comunicare vizuală – de la caiete de schițe la pictură pe pânză, de la markere la uleiuri și, recent, artă digitală, design vestimentar sau regie creativă.
             </div>
             <div>
-            Adriana este fostă cursantă Nuvotek, iar după studii s-a întors la Nuvotek ca formator al viitoarei generații de arhitecți, designeri și artiști. Ea își dorește să pună o bază solidă atât în tehnica de desen a elevilor, cât și să îi ajut să își formeze disciplina de lucru, să îșii întărească încrederea în ei și să îi pregătească pentru a intra cu entuziasm și baze formate în acest domeniu creativ al arhitecturii.          </div>
-            <div>
-            Adriana a lucrat ca graphic designer la companii și business-uri. Ea a început să predea un curs de desen digital în aplicația Procrate în anul 2021 în cadrul Nuvotek Studio.
+              Fostă cursantă a Nuvotek Academy, Adriana s-a alăturat echipei ca tutor, pregătind viitoarele generații de arhitecți, designeri și artiști. Cu un stil pedagogic solid, ea îi ajută pe cursanți să-și perfecționeze tehnica de desen, să își dezvolte disciplina de lucru și încrederea în abilitățile lor artistice. Totodată, îi motivează să accepte cu entuziasm provocările din industriile creative.
             </div>
             <div>
-            De asemenea, Adriana a fost întotdeauna preocupată de activități care să o dezvolte atât pe plan personal, cât și pe plan profesional. De-a lungul timpului, a fost voluntar ca grafician și ilustrator la asociație Her Time România, la festivalul Street Delivery, la URBOTECA și coordonatoare departamentului de grafică din cadrul revistei LZR.            </div>
+              Adriana pune accent pe dezvoltarea gândirii logice și creative, combinând armonios tehnica cu creația. Pentru ea, fiecare design spune o poveste, iar misiunea sa este să îi ajute pe cursanți să-și descopere stilul propriu și să creeze idei vizuale cu impact. Le insuflă pasiunea de a găsi inspirație în mediul înconjurător și de a-și documenta ideile în sketchbook-uri.
+            </div>
+            <div>
+              Cu experiență ca graphic designer în diverse companii, Adriana a început în 2021 să predea cursuri de desen digital în Procreate, în cadrul Nuvotek Academy. În paralel, a fost activă ca voluntar grafician și ilustrator pentru organizații precum Her Time România, Street Delivery și URBOTECA, și a coordonat departamentul de grafică al revistei LZR. Dezvoltarea personală și profesională este o prioritate constantă pentru ea, iar pasiunea și implicarea sa inspiră fiecare generație pe care o îndrumă.
+            </div>
           </div>
         </div>
         <div className='team-info-section'>
           <div className='team-info-section-text-body'>
             <div>
-            Pasiunea pentru artă și știință au îndemnat-o să studieze Arhitectura Generală în cadrul Universității de Arhitectură și Urbanism „Ion Mincu”.
-            Ea își dorește să creeze un mediu de învățare dinamic și stimulant în care studenții să poată explora, învăța și crea.
+              Daria este absolventă a Facultății de Arhitectură de Interior, secția Mobilier și Amenajări de Interior, din cadrul Universității de Arhitectură și Urbanism „Ion Mincu”. Pasionată de design de interior, istoria arhitecturii și artă, Daria își aduce contribuția ca mentor, împărtășind cursanților pasiunea sa pentru estetica vizuală și oferindu-le frecvent perspective din domenii creative conexe, precum cinematografie sau istoria designului.
             </div>
             <div>
-            Pe lângă dobândirea noțiunilor teoretice de bază în Arhitectură și aplicarea acestora, Andreea își propune să le împărtășească atât cunoștințele academice, cât și perspectiva practică a arhitecturii și a design-ului, astfel încât cursanții să fie pregătiți să facă față provocărilor universitare și să-și dezvolte potențialul.
+              Cu dorința de a forma arhitecți profesioniști și creativi, Daria pune accent pe dezvoltarea simțului estetic și pe încurajarea exprimării libere. Flexibilă și deschisă, creează un mediu educațional diferit de cel tradițional, plăcut și stimulant, în care fiecare curs devine o oportunitate de a inspira tinerii să își exploreze ideile și viziunea.
             </div>
             <div>
-            De asemenea, ea își dorește să motiveze studenții să persevereze în pasiunea lor pentru arhitectură, design sau grafică și să își dezvolte o carieră de succes. Ea spune că se simte recunoscătoare că are oportunitatea de a îi îndruma pe studenți atât pe plan profesional, cât și plan personal.
+              Focalizată pe feedback constructiv și comunicare eficientă, Daria ajută cursanții să își susțină ideile prin reprezentări grafice clare și bine argumentate. În paralel, dezvoltă o cultură estetică generală prin discuții captivante despre artă, arhitectură și design, oferindu-le cursanților un spațiu sigur pentru învățare și explorare creativă. Astfel, Daria modelează viitoarele generații de arhitecți și designeri cu încredere, curaj și viziune.
             </div>
           </div>
-          <div className='team-info-section-image-with-caption'>
-            <img src='./team_andreea_dima.jpg' alt='team-andreea-dima'/>
-            <div>Andreea Dima #NVK04</div>
-          </div>
-        </div>
-        <div className='team-info-section'>
           <div className='team-info-section-image-with-caption'>
             <img src='./team_daria_parvu.jpg' alt='team-daria-parvu'/>
-            <div>Daria Pârvu #NVK05</div>
+            <div>Daria Pârvu</div>
+          </div>
+        </div>
+        <div className='team-info-section'>
+          <div className='team-info-section-image-with-caption'>
+            <img src='./team_andreea_dima.jpg' alt='team-andreea-dima'/>
+            <div>Andreea Dima</div>
           </div>
           <div className='team-info-section-text-body'>
             <div>
-            Daria a absolvit Facultatea de Arhitectură de Interior, secția Mobilier și amenajări de interior din cadrul Universității de Arhitectură și Urbanism „Ion Mincu”. Pasionată de design de interior, istoria Arhitecturii și de artă, ea împărtășește aceste pasiuni cu studenții săi la fiecare ședință.</div>
-            <div>
-            Daria își dorește să formeze viitori arhitecți, profesioniști și serioși, cu simț estetic. Ea a fost interesată dintotdeauna de pedagogie și se bucură că are șansa de a lucra cu adolescenți și de a crea o atmosferă plăcută și distractivă, diferită de cea din sistemul de învățământ. Fiecare zi de curs este o nouă oportunitate de a forma adolescenți curajoși și creativi, care să aibă curajul să își facă vocea auzită. Ea încurajează studenții să își susțină ideile în orice tip de reprezentare în desen și își dorește să lucreze cu tineri curioși și pasionați.
+              Pasiunea pentru artă și știință au determinat-o să studieze Arhitectura Generală la Universitatea de Arhitectură și Urbanism „Ion Mincu”. Andreea creează un mediu de învățare dinamic, în care cursanții pot explora, învăța și crea, dezvoltându-și atât cunoștințele teoretice, cât și abilitățile practice.
             </div>
             <div>
-            Daria le formează cursanților și cultura generală și estetică și le vorbește întotdeauna despre artă, cinematografie, design și arhitectură.
+              Ea împărtășește cursanților perspectiva academică și practică a arhitecturii și designului, pregătindu-i să facă față provocărilor universitare și să își valorifice potențialul. Prin dedicare și motivație, îi încurajează să-și urmeze pasiunea pentru arhitectură, design sau grafică, punând bazele unei cariere de succes.            
             </div>
+            <div>
+              Pentru Andreea, arhitectura este mai mult decât o profesie – este un stil de viață, o modalitate de a descoperi poveștile spațiilor și locurilor. Fiecare stradă, fiecare colț are o poveste de spus, iar prin schițe și fotografii, ea încearcă să surprindă esența fiecărui loc.
+            </div>
+            <div>
+              Procesul creativ este pentru ea o călătorie, iar scopul este să îndrume fiecare cursant să-și găsească ritmul, să capete încredere în abilitățile proprii și să creeze lucrări care inspiră și comunică cu forță și eleganță.
+            </div>
+          </div>
+        </div>
+        <div className='team-info-section'>
+          <div className='team-info-section-text-body'>
+            <div>
+              Larisa este tutore Nuvotek Academy și transformă pasiunea sa pentru această disciplină într-o sursă de inspirație pentru cursanți. Pentru ea, arhitectura este o artă aplicată care îmbină logica cu emoția, funcționalitatea cu estetica și structura cu imaginația. Fiecare proiect devine o oportunitate de a crea armonie între spațiu și suflet.
+            </div>
+            <div>
+              Dedicată dezvoltării cursanților, Larisa îi ajută pe aceștia să își perfecționeze abilitățile de desen tehnic și artistic, să-și exprime ideile creative și să câștige încredere în propriile capacități. Lecțiile sunt adaptate fiecărui cursant, în funcție de nivelul, ritmul și personalitatea acestuia, asigurând o experiență de învățare plăcută și eficientă.
+            </div>
+            <div>
+              Cu răbdare și pasiune, Larisa creează un mediu în care elevii pot explora liber creativitatea, găsind echilibrul între tehnică și inspirație. Prin abordarea sa personalizată, ea le oferă o bază solidă pentru o carieră în arhitectură și îi încurajează să își dezvolte disciplina de lucru, creativitatea și încrederea – abilități esențiale pentru succesul profesional.
+            </div>
+          </div>
+          <div className='team-info-section-image-with-caption'>
+            <img src='./team_larisa_constantin.jpg' alt='team-larisa-constantin'/>
+            <div>Larisa Constantin</div>
+          </div>
+        </div>
+        <div className='team-info-section'>
+          <div className='team-info-section-image-with-caption'>
+            <img src='./team_andreea_bunea.jpeg' alt='team-andreea-bunea'/>
+            <div>Andreea Bunea</div>
+          </div>
+          <div className='team-info-section-text-body'>
+            <div>
+              Andreea, tutor la Nuvotek Academy, inspiră tinerii să fie curioși și pasionați. Pentru ea, arhitectura înseamnă mai mult decât a proiecta clădiri – este despre modul în care spațiile ne influențează starea de spirit și creativitatea cu care modelăm lumea din jur.
+            </div>
+            <div>
+              În abordarea sa, Andreea îi îndrumă pe cursanți să observe detalii, să exploreze proporții, forme și texturi, ajutându-i să-și dezvolte gândirea critică și să descopere noi perspective asupra spațiului. Lecțiile sunt adaptate fiecărui nivel de înțelegere și interes, într-un mediu sigur și deschis, unde experimentarea și greșelile sunt parte din procesul de învățare.
+            </div>
+            <div>
+              Cu răbdare și dedicare, Andreea sprijină dezvoltarea creativității, a capacității de observație și a încrederii în sine, pregătindu-i pe cursanți pentru viitor. Abordarea sa îi ajută pe aceștia să perceapă arhitectura ca o formă de explorare creativă a lumii în care trăim.
+            </div>
+          </div>
+        </div>
+        <div className='team-info-section'>
+          <div className='team-info-section-text-body'>
+            <div>
+              Pasiunea pentru arte plastice a început cu desen grafit, uleiuri pe pânză și a evoluat pe parcursul formării profesionale în direcții diverse.
+            </div>
+            <div>
+              Ca voluntar, a reprezentat România în Wuppertal, Germania, la concursul Solar Decathlon Europe cu un concept de casa sustenabilă unde a participat la fazele de proiectare și șantier. Experiența tehnică de modelare 3D și vizualizare de arhitectură, îl ajută pe Alex sa fie o persoana care împarte din experiența personală și oferă o viziune de ansamblu cursanților.
+            </div>
+            <div>
+              Alex crede într-o înțelegere multidisciplinară a arhitecturii și a designului grafic și este de părere că nu trebuie să ne limităm la un singur mediu de lucru. Pictura, fotografia, schițele, designul pe calculator, muzica sau matematica, sunt toate ramuri care pot fi valorificate în concepte valoroase. Tot bagajul de abilități își va avea folosul la timpul potrivit și nu trebuie să ne rezumăm la un drum bătătorit. Alex reușește să implementeze la modulele 1 și 2 o gândire critică și o dezvoltare pe plan personal care să ofere baze solide micilor artiști.
+            </div>
+          </div>
+          <div className='team-info-section-image-with-caption'>
+            <img src='./team_alex_duta.jpeg' alt='team-alex-duta'/>
+            <div>Alex Duță</div>
           </div>
         </div>
       </div>
