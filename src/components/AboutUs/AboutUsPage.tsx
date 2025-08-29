@@ -1,31 +1,34 @@
+import { useTranslation } from 'react-i18next';
 import './AboutUsPage.css';
 
 function AboutUsPage() {
+    const translate = useTranslation().t;
+    
     return (
       <div className="about-us-container">
-        <h1 className='h1-nuvotek'>Mai mult decât un studio al creației</h1>
-        <h3>O comunitate adaptată stilului de viață al tinerilor</h3>
+        <h1 className='h1-nuvotek'>{translate("about_us_title_1")}</h1>
+        <h3>{translate("about_us_subtitle_1")}</h3>
         <div>
-          Nuvotek este un centru de pregătire, care are ca scop dezvoltarea abilităților artistice și care iși propune să revoluționeze procesul creativ, necesar experienței universitare.
+          {translate("about_us_par_1")}
         </div>
-        <h1 className='h1-nuvotek'>Misiunea noastră</h1>
+        <h1 className='h1-nuvotek'>{translate("about_us_title_2")}</h1>
         <div>
-          Este aceea de a oferi o educație corectă în artă, de a dezvolta tânărul cursant într-un adult responsabil și implicat în viitoarele probleme ale societății. Dacă tu crezi că vrei să devii un astfel de artist, cursurile au loc la studioul nostru situat la Piața Iancului. Te așteptăm să te alături uneia dintre grupele noastre zilnice!
-        </div>
-        <div>
-          Fie că vrei să te îndrepți spre arhitectură, design de interior, fashion design sau design de personaje, în România sau peste mări si țări, la noi vei găsi pregătirea adecvată. Dacă încă nu știi către care ramură vrei să te îndrepți pregătirile noastre acoperă bazele fiecărui domeniu, astfel că o să găsim împreună ceea ce ți se potrivește.
+          {translate("about_us_par_2")}
         </div>
         <div>
-          Spiritul comunității noastre se clădește în baza respectului atât față de artist, cât și față de procesul de formare al acestuia, față de artă, sub orice formă întâlnită, cu multă muncă și perseverență, în vederea idealurilor la care aspirăm. Este mai mult decât un studio al creației, este o comunitate adaptată stilului de viață al tinerilor în care barierele învățământului formal sunt îndepărtate.
+          {translate("about_us_par_3")}
         </div>
         <div>
-        Vei învăța cum să îți prezinți ideile, cum să le dezbați, cum să te ajuți și să îi ajuți pe alții să le fructifice, cum să asculți și să respecți puncte de vedere diferite, cum să primești și să oferi, la rândul tău, feedback constructiv, cum să dezbați idei, cum să ți le adaptezi la variatele contexte pe care le vei întâlni, atât în cariera pe care ți-o vei forma, cât și în viața ta de zi cu zi.  
+          {translate("about_us_par_4")}
         </div>
         <div>
-        O fundație viguroasă umană dă cale liberă dezvoltării abilităților specifice domeniului ales. Comunitatea din care vei face parte, alături de noi și de mulți alții ca noi te va sprijini constant în consolidarea arhitecturii tale ca om-artist.
+          {translate("about_us_par_5")}
+        </div>
+        <div>
+          {translate("about_us_par_6")}
         </div>
         <div className="separator"/>
-        <h1 className='h1-nuvotek'>Meet the team</h1>
+        <h1 className='h1-nuvotek'>{translate("about_us_title_3")}</h1>
         <div className='team-info-section'>
           <div className='team-info-section-image-with-caption'>
             <img src='./team_cristina_stanescu.jpg' alt='team-cristina-stanescu'/>
@@ -33,26 +36,25 @@ function AboutUsPage() {
           </div>
           <div className='team-info-section-text-body'>
             <div>
-              Cristina, fondatoarea Nuvotek, a început magia acum 10 ani.
-              Încă din timpul facultății de arhitectură, Cristina Stănescu a început să construiască, pas cu pas, drumul către visul de a contribui productiv și constructiv în dezvoltarea societății, prin educație.
+              {translate("about_us_par_7")}
             </div>
             <div>
-              De 12 ani se dedică cu pasiune și implicare pentru a transmite educația în artă și arhitectură copiilor ce își doresc să se inițieze în aceste domeniu. Îndrumând tineri artiști pentru a deveni arhitecți, designeri și game developers, Cristina a creat o comunitate bazată pe acceptare completă a propriilor personalități, devenind o familie de sute de copii ce păstrează în suflet apartenența la Nuvotek.
+              {translate("about_us_par_8")}
             </div>
             <div>
-              Echipa este în continuă dezvoltare datorită foștilor elevi ce i-au devenit colegi și este încrezătoare că împreună vor continua să educe și să îndrume tinerii să își urmeze visul.
+              {translate("about_us_par_9")}
             </div>
             <div>
-              Orientată către viitor, ea a completat structura necesară admiterii la o facultate al cărei domeniu de studiu este arta vizuală, atât cu elemente sociale și culturale, cât și cu cele actualizate, specifice tehnologiei într-o continuă dezvoltare. Structura cursului este creată în așa fel încât să valorifice individul, oferindu-i astfel libertatea de își lasă amprenta asupra propriilor lucrări, descoperind și dezvoltând stilul personal. Cristina își propune ca, alături de echipa ei, să facă parte din îmbunătățirea viitorului prin dezvoltarea de caractere ce vor fi exemple pentru următoarele generații.
+              {translate("about_us_par_10")}
             </div>
             <div>
-              Copiii au nevoie de exemple, iar tinerii Nuvotek vor fi adulții ce proiectează viitorul.
+              {translate("about_us_par_11")}
             </div>
           </div>
         </div>
         <div className='team-info-section'>
           <div className='team-info-section-text-body'>
-            Victor Stănescu este unul dintre fondatorii Nuvotek Studio. El oferă atât suport tehnic, cât și suport administrativ. Cu ajutorul lui, lucrurile sunt mai ușoare pentru toți mentorii Nuvotek. În plus, oferă consultanță și suport constant copiilor care aplică la facultăți în străinătate, indiferent de domeniul ales, Nuvotek fiind acreditat UCAS.
+            {translate("about_us_par_12")}
           </div>
           <div className='team-info-section-image-with-caption'>
             <img src='./team_victor_stanescu.jpg' alt='team-victor-stanescu'/>
@@ -60,7 +62,7 @@ function AboutUsPage() {
           </div>
         </div>
         <div className="separator"/>
-        <h1 className='h1-nuvotek'>Echipă tutori</h1>
+        <h1 className='h1-nuvotek'>{translate("about_us_title_4")}</h1>
         <div className='team-info-section'>
           <div className='team-info-section-image-with-caption'>
             <img src='./team_adriana_tomeci.jpg' alt='team-adriana-tomeci'/>
@@ -68,49 +70,105 @@ function AboutUsPage() {
           </div>
           <div className='team-info-section-text-body'>
             <div>
-            Adriana Tomeci este #NVK02 și este formatorul din cadrul modulelor 1 și 2. Ea a absolvit un program de licență și un masterat la Manchester School of Architecture. Cu toate acestea, arta a avut un loc special în inima ei. Adriana este o persoană multidisciplinar și caută mereu să învețe și să experimenteze prin diferite forme de comunicare vizuală. De la caiete de schițe la pânze, de la markere la uleiuri și, cel mai recent, artă digitală, design vestimentar sau regie creativă ea este într-o continuă dezvoltare ca artist și designer.
+              {translate("about_us_par_13")}
             </div>
             <div>
-            Adriana este fostă cursantă Nuvotek, iar după studii s-a întors la Nuvotek ca formator al viitoarei generații de arhitecți, designeri și artiști. Ea își dorește să pună o bază solidă atât în tehnica de desen a elevilor, cât și să îi ajut să își formeze disciplina de lucru, să îșii întărească încrederea în ei și să îi pregătească pentru a intra cu entuziasm și baze formate în acest domeniu creativ al arhitecturii.          </div>
-            <div>
-            Adriana a lucrat ca graphic designer la companii și business-uri. Ea a început să predea un curs de desen digital în aplicația Procrate în anul 2021 în cadrul Nuvotek Studio.
+              {translate("about_us_par_14")}
             </div>
             <div>
-            De asemenea, Adriana a fost întotdeauna preocupată de activități care să o dezvolte atât pe plan personal, cât și pe plan profesional. De-a lungul timpului, a fost voluntar ca grafician și ilustrator la asociație Her Time România, la festivalul Street Delivery, la URBOTECA și coordonatoare departamentului de grafică din cadrul revistei LZR.            </div>
+              {translate("about_us_par_15")}
+            </div>
+            <div>
+              {translate("about_us_par_16")}
+            </div>
           </div>
         </div>
         <div className='team-info-section'>
           <div className='team-info-section-text-body'>
             <div>
-            Pasiunea pentru artă și știință au îndemnat-o să studieze Arhitectura Generală în cadrul Universității de Arhitectură și Urbanism „Ion Mincu”.
-            Ea își dorește să creeze un mediu de învățare dinamic și stimulant în care studenții să poată explora, învăța și crea.
+              {translate("about_us_par_17")}
             </div>
             <div>
-            Pe lângă dobândirea noțiunilor teoretice de bază în Arhitectură și aplicarea acestora, Andreea își propune să le împărtășească atât cunoștințele academice, cât și perspectiva practică a arhitecturii și a design-ului, astfel încât cursanții să fie pregătiți să facă față provocărilor universitare și să-și dezvolte potențialul.
+              {translate("about_us_par_18")}
             </div>
             <div>
-            De asemenea, ea își dorește să motiveze studenții să persevereze în pasiunea lor pentru arhitectură, design sau grafică și să își dezvolte o carieră de succes. Ea spune că se simte recunoscătoare că are oportunitatea de a îi îndruma pe studenți atât pe plan profesional, cât și plan personal.
+              {translate("about_us_par_19")}
             </div>
           </div>
-          <div className='team-info-section-image-with-caption'>
-            <img src='./team_andreea_dima.jpg' alt='team-andreea-dima'/>
-            <div>Andreea Dima #NVK04</div>
-          </div>
-        </div>
-        <div className='team-info-section'>
           <div className='team-info-section-image-with-caption'>
             <img src='./team_daria_parvu.jpg' alt='team-daria-parvu'/>
-            <div>Daria Pârvu #NVK05</div>
+            <div>Daria Pârvu</div>
+          </div>
+        </div>
+        <div className='team-info-section'>
+          <div className='team-info-section-image-with-caption'>
+            <img src='./team_andreea_dima.jpg' alt='team-andreea-dima'/>
+            <div>Andreea Dima</div>
           </div>
           <div className='team-info-section-text-body'>
             <div>
-            Daria a absolvit Facultatea de Arhitectură de Interior, secția Mobilier și amenajări de interior din cadrul Universității de Arhitectură și Urbanism „Ion Mincu”. Pasionată de design de interior, istoria Arhitecturii și de artă, ea împărtășește aceste pasiuni cu studenții săi la fiecare ședință.</div>
-            <div>
-            Daria își dorește să formeze viitori arhitecți, profesioniști și serioși, cu simț estetic. Ea a fost interesată dintotdeauna de pedagogie și se bucură că are șansa de a lucra cu adolescenți și de a crea o atmosferă plăcută și distractivă, diferită de cea din sistemul de învățământ. Fiecare zi de curs este o nouă oportunitate de a forma adolescenți curajoși și creativi, care să aibă curajul să își facă vocea auzită. Ea încurajează studenții să își susțină ideile în orice tip de reprezentare în desen și își dorește să lucreze cu tineri curioși și pasionați.
+              {translate("about_us_par_20")}
             </div>
             <div>
-            Daria le formează cursanților și cultura generală și estetică și le vorbește întotdeauna despre artă, cinematografie, design și arhitectură.
+              {translate("about_us_par_21")}
             </div>
+            <div>
+              {translate("about_us_par_22")}
+            </div>
+            <div>
+              {translate("about_us_par_23")}
+            </div>
+          </div>
+        </div>
+        <div className='team-info-section'>
+          <div className='team-info-section-text-body'>
+            <div>
+              {translate("about_us_par_24")}
+            </div>
+            <div>
+              {translate("about_us_par_25")}
+            </div>
+            <div>
+              {translate("about_us_par_26")}
+            </div>
+          </div>
+          <div className='team-info-section-image-with-caption'>
+            <img src='./team_larisa_constantin.jpg' alt='team-larisa-constantin'/>
+            <div>Larisa Constantin</div>
+          </div>
+        </div>
+        <div className='team-info-section'>
+          <div className='team-info-section-image-with-caption'>
+            <img src='./team_andreea_bunea.jpeg' alt='team-andreea-bunea'/>
+            <div>Andreea Bunea</div>
+          </div>
+          <div className='team-info-section-text-body'>
+            <div>
+              {translate("about_us_par_27")}
+            </div>
+            <div>
+              {translate("about_us_par_28")}
+            </div>
+            <div>
+              {translate("about_us_par_29")}
+            </div>
+          </div>
+        </div>
+        <div className='team-info-section'>
+          <div className='team-info-section-text-body'>
+            <div>
+              {translate("about_us_par_30")}
+            </div>
+            <div>
+              {translate("about_us_par_31")}
+            </div>
+            <div>
+              {translate("about_us_par_32")}
+            </div>
+          </div>
+          <div className='team-info-section-image-with-caption'>
+            <img src='./team_alex_duta.jpeg' alt='team-alex-duta'/>
+            <div>Alex Duță</div>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 5rem auto 10rem auto;
     box-sizing: border-box;
 
     h1 {
@@ -36,6 +36,8 @@
 /*Mobile Styles*/
 .testimonials-container-mobile {
     text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
 }
 
 /*Common Styles*/

@@ -6,7 +6,7 @@ export type TabContent = {
   };
 
 export const tabContents: TabContent[] = [
-    { label: 'ARHITECTURĂ', images: [
+    { label: 'gallery_tab_1', images: [
         { id: 11, src: './ARHITECTURĂ/2.png', thumbnailSrc: './ARHITECTURĂ/2-thumbnail.png', alt: 'Image 11' },
         { id: 12, src: './ARHITECTURĂ/3.png', thumbnailSrc: './ARHITECTURĂ/3-thumbnail.png', alt: 'Image 12' },
         { id: 13, src: './ARHITECTURĂ/4.png', thumbnailSrc: './ARHITECTURĂ/4-thumbnail.png', alt: 'Image 13' },
@@ -51,7 +51,7 @@ export const tabContents: TabContent[] = [
         { id: 142, src: './ARHITECTURĂ/Untitled-79.png', thumbnailSrc: './ARHITECTURĂ/Untitled-79-thumbnail.png', alt: 'Image 142' },
         { id: 143, src: './ARHITECTURĂ/Untitled-80.png', thumbnailSrc: './ARHITECTURĂ/Untitled-80-thumbnail.png', alt: 'Image 143' }
     ]},
-    { label: 'DESIGN INTERIOR', images: [
+    { label: 'gallery_tab_2', images: [
         { id: 21, src: './DESIGN INTERIOR/11.png', thumbnailSrc: './DESIGN INTERIOR/11-thumbnail.png', alt: 'Image 21' },
         { id: 22, src: './DESIGN INTERIOR/12.png', thumbnailSrc: './DESIGN INTERIOR/12-thumbnail.png', alt: 'Image 22' },
         { id: 23, src: './DESIGN INTERIOR/Untitled-13.png', thumbnailSrc: './DESIGN INTERIOR/Untitled-13-thumbnail.png', alt: 'Image 23' },
@@ -70,7 +70,7 @@ export const tabContents: TabContent[] = [
     ]
     
     },
-    { label: 'FASHION DESIGN', images: [
+    { label: 'gallery_tab_3', images: [
         { id: 31, src: './FASHION DESIGN/Untitled-1.png', thumbnailSrc: './FASHION DESIGN/Untitled-1-thumbnail.png', alt: 'Image 31' },
         { id: 32, src: './FASHION DESIGN/Untitled-18.png', thumbnailSrc: './FASHION DESIGN/Untitled-18-thumbnail.png', alt: 'Image 32' },
         { id: 33, src: './FASHION DESIGN/Untitled-19.png', thumbnailSrc: './FASHION DESIGN/Untitled-19-thumbnail.png', alt: 'Image 33' },
@@ -78,7 +78,7 @@ export const tabContents: TabContent[] = [
         { id: 35, src: './FASHION DESIGN/Untitled-21.png', thumbnailSrc: './FASHION DESIGN/Untitled-21-thumbnail.png', alt: 'Image 35' },
         { id: 36, src: './FASHION DESIGN/Untitled-61.png', thumbnailSrc: './FASHION DESIGN/Untitled-61-thumbnail.png', alt: 'Image 36' }
     ]},
-    { label: 'GAME DESIGN', images: [
+    { label: 'gallery_tab_4', images: [
         { id: 41, src: './GAME AND CHARACTER DESIGN/Untitled-16.png', thumbnailSrc: './GAME AND CHARACTER DESIGN/Untitled-16-thumbnail.png', alt: 'Image 41' }, 
         { id: 42, src: './GAME AND CHARACTER DESIGN/Untitled-37.png', thumbnailSrc: './GAME AND CHARACTER DESIGN/Untitled-37-thumbnail.png', alt: 'Image 42' }, 
         { id: 43, src: './GAME AND CHARACTER DESIGN/Untitled-38.png', thumbnailSrc: './GAME AND CHARACTER DESIGN/Untitled-38-thumbnail.png', alt: 'Image 43' },
@@ -92,7 +92,7 @@ export const tabContents: TabContent[] = [
         { id: 411, src: './GAME AND CHARACTER DESIGN/Untitled-50.png', thumbnailSrc: './GAME AND CHARACTER DESIGN/Untitled-50-thumbnail.png', alt: 'Image 411' }
     ]},
     {
-        label: 'OUR STUDIO', images: [
+        label: 'gallery_tab_5', images: [
             { id: 51, src: './OUR STUDIO/Untitled-1.png', thumbnailSrc: './OUR STUDIO/Untitled-1-thumbnail.png', alt: 'Image 41' }, 
             { id: 52, src: './OUR STUDIO/Untitled-2.png', thumbnailSrc: './OUR STUDIO/Untitled-2-thumbnail.png', alt: 'Image 42' }, 
             { id: 53, src: './OUR STUDIO/Untitled-3.png', thumbnailSrc: './OUR STUDIO/Untitled-3-thumbnail.png', alt: 'Image 43' },
@@ -106,7 +106,7 @@ export const tabContents: TabContent[] = [
         ]
     },
     {
-        label: 'PRODUCT DESIGN', images: [
+        label: 'gallery_tab_6', images: [
             { id: 61, src: './PRODUCT DESIGN/10.png', thumbnailSrc: './PRODUCT DESIGN/10-thumbnail.png', alt: 'Image 41' }, 
             { id: 62, src: './PRODUCT DESIGN/Untitled-35.png', thumbnailSrc: './PRODUCT DESIGN/Untitled-35-thumbnail.png', alt: 'Image 42' }, 
             { id: 63, src: './PRODUCT DESIGN/Untitled-72.png', thumbnailSrc: './PRODUCT DESIGN/Untitled-72-thumbnail.png', alt: 'Image 43' },

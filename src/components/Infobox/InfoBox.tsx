@@ -1,6 +1,7 @@
 import React from 'react';
 import './InfoBox.css';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export type ButtonLink = 'inscriu' | 'planse';
 
@@ -12,12 +13,15 @@ interface InfoBoxProps {
 }
 
 const InfoBox: React.FC<InfoBoxProps> = (props) => {
+      const translate = useTranslation().t;
+
+
     const renderCta = () => {
         if (props.buttonLink === 'inscriu') {
             return (
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5Vz11lTctGTbPK9jPH9xLVRwrZSud37PyFpFDUAxRS82pZw/viewform" target="_blank" rel="noreferrer">
                     <button className="navbar__button">
-                        MĂ ÎNSCRIU
+                        {translate("register_cta")}
                     </button>
                 </a>
             );
@@ -25,7 +29,7 @@ const InfoBox: React.FC<InfoBoxProps> = (props) => {
             return (
                 <Link to="/planse">
                     <button className="navbar__button">
-                        DESCOPERĂ PLANȘELE
+                        {translate("discover_cta")}
                     </button>
                 </Link>
             );

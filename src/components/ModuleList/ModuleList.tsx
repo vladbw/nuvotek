@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './ModuleList.css';
 import CheckBoxIcon from './CheckboxIcon';
+import { useTranslation } from 'react-i18next';
 
 interface ILearningModule {
     title: string;
@@ -10,21 +11,22 @@ interface ILearningModule {
 
 
 const ModuleList: React.FC = () => {
+    const translate = useTranslation().t;
     const modules: ILearningModule[] = [
         {
-            title: "Modulul 1",
-            subTitle: "INTRODUCTIV",
-            learningOutcomes: ['Linia și hașura', 'Axonometrie', 'Perspectivă', 'Intersecții de corpuri geometrice', 'Reguli de compoziție', 'Materialitate', 'Compoziții de obiecte', 'Drapaj', 'Multe altele...']
+            title: "module_1_title",
+            subTitle: "module_1_subtitle",
+            learningOutcomes: ['module_1_outcome_1', 'module_1_outcome_2', 'module_1_outcome_3', 'module_1_outcome_4', 'module_1_outcome_5', 'module_1_outcome_6', 'module_1_outcome_7', 'module_1_outcome_8', 'module_outcome_others']
         },
         {
-            title: "Modulul 2",
-            subTitle: "MEDIU",
-            learningOutcomes: ['Studiu perspectivă mobilier', 'Perspectivă de interior', 'Studiu stiluri arhitecturale', 'Concept mobilier', 'Planuri de case', 'Concepte arhitectură generală', 'Studiu corp uman', 'Proiect “The Future is Now”', 'Multe altele...']
+            title: "module_2_title",
+            subTitle: "module_2_subtitle",
+            learningOutcomes: ['module_2_outcome_1', 'module_2_outcome_2', 'module_2_outcome_3', 'module_2_outcome_4', 'module_2_outcome_5', 'module_2_outcome_6', 'module_2_outcome_7', 'module_2_outcome_8', 'module_outcome_others']
         },
         {
-            title: "Modulul 3",
-            subTitle: "AVANSAT",
-            learningOutcomes: ['Machete', 'Concept proiect cu client', 'Concept “Orașul Viitorului', 'Geometrie descriptivă avansată', 'Concept sustenabilitate', 'Simulări teste', 'Concepte abstracte', 'Portofoliu ', 'Multe altele...']
+            title: "module_3_title",
+            subTitle: "module_3_subtitle",
+            learningOutcomes: ['module_3_outcome_1', 'module_3_outcome_2', 'module_3_outcome_3', 'module_3_outcome_4', 'module_3_outcome_5', 'module_3_outcome_6', 'module_3_outcome_7', 'module_3_outcome_8', 'module_outcome_others']
         }
     ];
 
@@ -45,11 +47,11 @@ const ModuleList: React.FC = () => {
     const renderContents = () => {
         return modules.map((module: ILearningModule, index) => 
                 <div className="single-module box-shadow-nuvotek round-corners-nuvotek" key={`single-module-${index}`}>
-                    <h2>{module.title}</h2>
-                    <p>{module.subTitle}</p>
+                    <h2>{translate(module.title)}</h2>
+                    <p>{translate(module.subTitle)}</p>
                     <div className='single-module-item-list'>
                         <ul>
-                            {module.learningOutcomes.map((learningOutcome, loIndex) => <li className='module-checkbox-item' key={`single-module-outcome-${index}-${loIndex}`}><CheckBoxIcon/><p>{learningOutcome}</p></li>)}
+                            {module.learningOutcomes.map((learningOutcome, loIndex) => <li className='module-checkbox-item' key={`single-module-outcome-${index}-${loIndex}`}><CheckBoxIcon/><p>{translate(learningOutcome)}</p></li>)}
                         </ul>
                     </div>
                 </div>
