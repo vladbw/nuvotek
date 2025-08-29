@@ -42,7 +42,7 @@ export default function LanguageSwitcher({ iconSrc, alt = "Language" }: Language
             onClick={() => handleLanguageChange("ro")}
             className={`lang-option ${i18n.language === "ro" ? "active" : ""}`}
           >
-            🇷🇴 Romanian
+            🇷🇴 Română
           </button>
           <button
             onClick={() => handleLanguageChange("en")}
