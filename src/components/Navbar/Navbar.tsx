@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import './Navbar.css';
 import MobileNavbar from "./MobileNavbar";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 function Navbar() {
     return (
@@ -19,6 +20,9 @@ function Navbar() {
                     <div className="navbar__cta">
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5Vz11lTctGTbPK9jPH9xLVRwrZSud37PyFpFDUAxRS82pZw/viewform" target="_blank" rel="noreferrer"><button className="navbar__button">MĂ ÎNSCRIU</button></a>
                     </div>
+                </li>
+                <li>
+                    <LanguageSwitcher/>
                 </li>
             </ul>
             <MobileNavbar/>
