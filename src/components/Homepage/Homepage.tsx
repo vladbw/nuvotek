@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import TestimonialsSection from "../Testimonials/TestimonialsSection";
 import { Gallery } from "../Gallery/Gallery";
 import { useTranslation } from "react-i18next";
+import FAQ from "../FAQWidget/FAQ";
 
 function HomePage() {
   const translate = useTranslation().t;
@@ -57,6 +58,7 @@ function HomePage() {
         />
         <TestimonialsSection/>
         <Gallery/>
+        <FAQ/>
       </div>
     );
   }
