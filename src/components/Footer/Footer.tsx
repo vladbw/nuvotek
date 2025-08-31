@@ -12,7 +12,7 @@ function Footer() {
           </div>
         </Link>
         <p>
-          Copyright @NUVOTEK 2020
+          Copyright @NUVOTEK {new Date().getFullYear()}
         </p>
         <SocialIcon url="https://www.instagram.com/nuvotek_academy/" bgColor='transparent' fgColor='black' target="_blank"/>
       </div>
