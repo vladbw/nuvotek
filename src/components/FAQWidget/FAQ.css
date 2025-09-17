@@ -93,3 +93,9 @@
   color: #555;
   line-height: 1.5;
 }
+
+.faq-redirect-last-word {
+  color: #ff0000;
+  font-weight: bold;
+  text-decoration: underline;
+}
