@@ -97,13 +97,13 @@ function AboutUsPage() {
           </div>
           <div className='team-info-section-image-with-caption'>
             <img src='./team_daria_parvu.jpg' alt='team-daria-parvu'/>
-            <div>Daria Pârvu</div>
+            <div>Daria Pârvu #NVK05</div>
           </div>
         </div>
         <div className='team-info-section'>
           <div className='team-info-section-image-with-caption'>
             <img src='./team_andreea_dima.jpg' alt='team-andreea-dima'/>
-            <div>Andreea Dima</div>
+            <div>Andreea Dima #NVK04</div>
           </div>
           <div className='team-info-section-text-body'>
             <div>
@@ -134,13 +134,13 @@ function AboutUsPage() {
           </div>
           <div className='team-info-section-image-with-caption'>
             <img src='./team_larisa_constantin.jpg' alt='team-larisa-constantin'/>
-            <div>Larisa Constantin</div>
+            <div>Larisa Constantin #NVK06</div>
           </div>
         </div>
         <div className='team-info-section'>
           <div className='team-info-section-image-with-caption'>
             <img src='./team_andreea_bunea.jpeg' alt='team-andreea-bunea'/>
-            <div>Andreea Bunea</div>
+            <div>Andreea Bunea #NVK03</div>
           </div>
           <div className='team-info-section-text-body'>
             <div>
