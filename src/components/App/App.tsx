@@ -1,10 +1,21 @@
 import './App.css';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import WhatsAppChatBubble from '../WhatsAppChatBubble/WhatsAppChatBubble';
+import { useEffect } from 'react';
 
 function App() {
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    setTimeout(() => {
+      const container = document.querySelector('.App');
+      if(container) container.scrollTop = 0;
+    }, 0);
+  }, [pathname]);
+  
   return (
     <div className="App">
       <Navbar/>

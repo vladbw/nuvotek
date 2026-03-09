@@ -58,7 +58,7 @@ function HomePage() {
         />
         <TestimonialsSection/>
         <Gallery/>
-        <FAQ/>
+        <FAQ finalIndex={4} showRedirectSubtitle/>
       </div>
     );
   }
