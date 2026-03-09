@@ -8,7 +8,7 @@ const InfoSectionWithPhotoMobile: React.FC<InfoSectionWithPhotoProps> = (props) 
 
     return (
         <div className="content-section-mobile">
-            <h1 className='h1-nuvotek'>{props.title}</h1>
+            <h1 className='h1-nuvotek'>{props.title?.toUpperCase()}</h1>
             <img src={props.imgSrc} alt={props.imgAlt} />
             {props.subTitle ? <h2>{props.subTitle}</h2> : null}
             <p>{props.text}</p>

@@ -24,7 +24,7 @@ const InfoSectionWithPhoto: React.FC<InfoSectionWithPhotoProps> = (props) => {
                 </div>
             </div>
             <div className="content-section__image">
-                <img src={props.imgSrc} alt={props.imgAlt} />
+                <img src={props.imgSrc} alt={props.imgAlt} width={"450px%"}/>
             </div>
         </div>
     );

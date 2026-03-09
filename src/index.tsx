@@ -7,6 +7,7 @@ import HomePage from './components/Homepage/Homepage';
 import AboutUsPage from './components/AboutUs/AboutUsPage';
 import PlansePage from './components/Planse/PlansePage';
 import ContactPage from './components/ContactPage/ContactPage';
+import ConsultancyPage from './components/Consultancy/ConsultancyPage';
 import "./i18n";
 
 const root = ReactDOM.createRoot(
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactPage />,
+      },
+      {
+        path: "/consultanta",
+        element: <ConsultancyPage/>
       }
     ],
   },

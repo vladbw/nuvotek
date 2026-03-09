@@ -8,6 +8,7 @@ import TestimonialsSection from "../Testimonials/TestimonialsSection";
 import { Gallery } from "../Gallery/Gallery";
 import { useTranslation } from "react-i18next";
 import FAQ from "../FAQWidget/FAQ";
+import TESTIMONIALS from "../Testimonials/Testimonials";
 
 function HomePage() {
   const translate = useTranslation().t;
@@ -56,7 +57,7 @@ function HomePage() {
           buttonLink="planse" 
           text={translate("student_evolution_text")}
         />
-        <TestimonialsSection/>
+        <TestimonialsSection testimonials={TESTIMONIALS.slice(0, 6)}/>
         <Gallery/>
         <FAQ/>
       </div>

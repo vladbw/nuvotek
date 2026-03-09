@@ -32,6 +32,7 @@ function MobileNavbar() {
         <div className={'mobile-navbar-container'}>
             <Link to="/despre-noi" onClick={() => onMenuItemClick()}>{translate("menu_item_1")}</Link>
             <Link to="/planse" onClick={() => onMenuItemClick()}>{translate("menu_item_2")}</Link>
+            <Link to="/consultanta" onClick={() => onMenuItemClick()}>{translate("menu_item_4")}</Link>
             <Link to="/contact" onClick={() => onMenuItemClick()}>{translate("menu_item_3")}</Link>
             <MobileLanguageSwitcher/>
         </div>

@@ -47,7 +47,14 @@
 }
 
 .testimonial-name-par {
-    width: fit-content;
-    margin-left: auto;
     margin-right: 1rem;
+    color: red;
+    font-weight: 500;
+    font-style: italic;
+    text-align: right;
+    text-wrap-style: balance;
+}
+
+.testimonial-title-par {
+    color: black;
 }
