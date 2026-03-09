@@ -115,6 +115,8 @@
     "consultancy_page_main_text": "Our consulting services provide structured support throughout the application process, from choosing the right options and planning the calendar, to preparing essential documents and organizing the administrative file.",
     "faq_title": "Frequently Asked Questions",
     "faq_subtitle": "For more details, don’t hesitate to contact us.",
+    "faq_subtitle_redirect": "For a comprehensive list of questions, click here.",
+
     "faq_q_1": "What should I know before applying for the architecture courses?",
     "faq_a_1": "Nuvotek’s architecture courses do not require prior knowledge. You will learn everything from scratch that you need for admission to the faculty of architecture, throughout the three modules (introductory, intermediate, advanced).",
     "faq_q_2": "What is the success rate for admission to architecture from Nuvotek courses?",
@@ -122,6 +124,50 @@
     "faq_q_3": "How often will the meetings for Nuvotek architecture courses take place?",
     "faq_a_3": "Nuvotek’s architecture courses are held once or twice a week, depending on your age when you start the preparation. They take place either physically at our studio in Bucharest or online, via Google Meet.",
     "faq_q_4": "Can I also prepare for an architecture faculty abroad at Nuvotek?",
-    "faq_a_4": "Absolutely! Whether we’re talking about universities in Europe, Asia, America, or even Australia, you can acquire the necessary knowledge to be admitted to an architecture faculty abroad. Moreover, the admission rate to at least one architecture faculty abroad has been 100% throughout all the years of our activity."
+    "faq_a_4": "Absolutely! Whether we’re talking about universities in Europe, Asia, America, or even Australia, you can acquire the necessary knowledge to be admitted to an architecture faculty abroad. Moreover, the admission rate to at least one architecture faculty abroad has been 100% throughout all the years of our activity.",
+    "faq_q_5": "What is Nuvotek Academy and who is it for?",
+  "faq_a_5": "Nuvotek is a training center dedicated to students and young people passionate about creative fields (architecture, design, fashion design, etc.) who want to develop their creativity and prepare for university admission in Romania or abroad.",
+
+  "faq_q_6": "Which fields can I train in at Nuvotek?",
+  "faq_a_6": "Nuvotek Academy offers training in: architecture, interior design, fashion design, game design, product design, and scenography.",
+
+  "faq_q_7": "What courses does Nuvotek offer?",
+  "faq_a_7": "We offer long-term creative courses for university admission, thematic workshops, and educational consulting for international university applications.",
+
+  "faq_q_8": "Does Nuvotek help with university admission preparation?",
+  "faq_a_8": "Yes, our courses are specifically designed for admission to architecture and design faculties, both in Romania and abroad.",
+
+  "faq_q_9": "How are the courses conducted?",
+  "faq_a_9": "Courses include practical exercises, exam simulations, tutor feedback, and projects that can be included in a portfolio.",
+
+  "faq_q_10": "Are courses available online or only in person?",
+  "faq_a_10": "Yes, Nuvotek Academy courses are available both in-person and online.",
+
+  "faq_q_11": "How can I enroll in Nuvotek Academy?",
+  "faq_a_11": "Enrollment can be done by completing the form on the website or by contacting us directly via email or phone.",
+
+  "faq_q_12": "What support is provided for portfolio development?",
+  "faq_a_12": "Cristina Stanescu provides guidance for creating, organizing, and diversifying the portfolio through practical work and real examples.",
+
+  "faq_q_13": "Do you provide personalized feedback on projects?",
+  "faq_a_13": "Yes, each student receives continuous and personalized feedback aimed at improving both technical skills and creativity.",
+
+  "faq_q_14": "Who are the Nuvotek tutors?",
+  "faq_a_14": "Nuvotek Academy is coordinated by Cristina Stănescu, architect and founder, and the team includes tutors with practical and pedagogical experience.",
+
+  "faq_q_15": "What experience does Nuvotek Academy have?",
+  "faq_a_15": "Nuvotek Academy has over 15 years of experience in training young artists and preparing students for creative faculties.",
+
+  "faq_q_16": "Are there courses for beginners?",
+  "faq_a_16": "Yes, Nuvotek Academy courses are divided into 3 modules: beginner, intermediate, and advanced. Students with no prior knowledge start from scratch and can progress up to completing their portfolio.",
+
+  "faq_q_17": "Can I combine multiple fields (e.g., architecture and interior design)?",
+  "faq_a_17": "Yes, the programs are designed to be flexible and allow combining fields depending on the student's goals.",
+
+  "faq_q_18": "Do you provide career guidance for university selection?",
+  "faq_a_18": "Yes, Nuvotek Academy's educational consulting includes selecting study programs and universities suitable for each student.",
+
+  "faq_q_19": "What are the benefits of participating in Nuvotek Academy?",
+  "faq_a_19": "Access to personalized mentoring, preparation for entrance exams, portfolio development, and the growth of creative skills within a dedicated and friendly community."
 
 }

@@ -1,33 +1,14 @@
 import { useState } from "react";
 import "./FAQ.css";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
+export interface IFAQWidgetProps {
+  finalIndex: number;
+  showRedirectSubtitle?: boolean;
+}
 
-type FAQItem = {
-  question: string;
-  answer: string;
-};
-
-const faqData: FAQItem[] = [
-  {
-    question: "faq_q_1",
-    answer: "faq_a_1"
-  },
-  {
-    question: "faq_q_2",
-    answer: "faq_a_2"
-  },
-  {
-    question: "faq_q_3",
-    answer: "faq_a_3"
-  },
-  {
-    question: "faq_q_4",
-    answer: "faq_a_4"
-  }
-];
-
-export default function FAQ() {
+export default function FAQ(props: IFAQWidgetProps) {
 
   const translate = useTranslation().t;
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -36,32 +17,51 @@ export default function FAQ() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const renderSubTitle = () => {
+    if (!props.showRedirectSubtitle) {
+      return <p className="faq-subtitle">{translate("faq_subtitle")}</p>;
+    }
+
+    const text = translate("faq_subtitle_redirect");
+    const words = text.split(" ");
+    const lastWord = words.pop();
+    const rest = words.join(" ");
+
+    return (
+      <p className="faq-subtitle">
+        <Link to="/faq">
+          {rest} {lastWord && <span className="faq-redirect-last-word">{lastWord}</span>}
+        </Link>
+      </p>
+    );
+  };
+
   return (
     <div className="faq-container">
       <h1 className="faq-title h1-nuvotek">
         {translate("faq_title")}
       </h1>
       <p className="faq-subtitle">
-        {translate("faq_subtitle")}
+        {renderSubTitle()}
       </p>
 
       <div className="faq-list">
-        {faqData.map((item, i) => (
+        {Array.from({ length: props.finalIndex }, (_, i) => i + 1).map((index) => (
           <div
-            key={i}
-            className={`round-corners-nuvotek box-shadow-nuvotek faq-item ${openIndex === i ? "open" : ""}`}
+            key={index}
+            className={`round-corners-nuvotek box-shadow-nuvotek faq-item ${openIndex === index ? "open" : ""}`}
           >
             <button
               className="faq-question"
-              onClick={() => toggle(i)}
+              onClick={() => toggle(index)}
             >
-              {translate(item.question)}
-              <span className={`faq-icon ${openIndex === i ? "rotate" : ""}`}>
+              {translate(`faq_q_${index}`)}
+              <span className={`faq-icon ${openIndex === index ? "rotate" : ""}`}>
                 ▼
               </span>
             </button>
             <div className="faq-answer">
-              <p>{translate(item.answer)}</p>
+              <p>{translate(`faq_a_${index}`)}</p>
             </div>
           </div>
         ))}

@@ -9,6 +9,7 @@ import PlansePage from './components/Planse/PlansePage';
 import ContactPage from './components/ContactPage/ContactPage';
 import ConsultancyPage from './components/Consultancy/ConsultancyPage';
 import "./i18n";
+import FAQ from './components/FAQWidget/FAQ';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactPage />,
+      },
+      {
+        path: "/faq",
+        element: <FAQ finalIndex={19}/>
       },
       {
         path: "/consultanta",
