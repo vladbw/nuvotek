@@ -59,7 +59,7 @@ function HomePage() {
         />
         <TestimonialsSection testimonials={TESTIMONIALS.slice(0, 6)}/>
         <Gallery/>
-        <FAQ finalIndex={4} showRedirectSubtitle/>
+        <FAQ questionIndexes={[1, 2, 3, 4]} showRedirectSubtitle/>
       </div>
     );
   }

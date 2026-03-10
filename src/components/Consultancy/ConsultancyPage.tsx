@@ -4,6 +4,7 @@ import InfoSectionWithPhoto from "../InfoSection/InfoSectionWithPhoto";
 import InfoSectionWithPhotoMobile from "../InfoSection/InfoSectionWithPhotoMobile";
 import TestimonialsSection from "../Testimonials/TestimonialsSection";
 import TESTIMONIALS from "../Testimonials/Testimonials";
+import FAQ from "../FAQWidget/FAQ";
 
 function ConsultancyPage() {
   const translate = useTranslation().t;
@@ -32,6 +33,7 @@ function ConsultancyPage() {
           imgAlt="Consultanta aplicat in strainatate"
           />
           <TestimonialsSection testimonials={TESTIMONIALS.slice(6)}/>
+          <FAQ questionIndexes={[20, 21, 22, 23, 24]} showRedirectSubtitle/>
   </div>;
 }
 

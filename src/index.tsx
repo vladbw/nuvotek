@@ -11,6 +11,10 @@ import ConsultancyPage from './components/Consultancy/ConsultancyPage';
 import "./i18n";
 import FAQ from './components/FAQWidget/FAQ';
 
+const FULL_FAQ_ORDER = [
+  1, 2, 20, 3, 4, 21, 5, 6, 7, 22, 8, 9, 10, 23, 11, 12, 13, 24, 14, 15, 16, 17, 18, 19
+];
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -38,7 +42,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/faq",
-        element: <FAQ finalIndex={19}/>
+        element: <FAQ questionIndexes={FULL_FAQ_ORDER} />
       },
       {
         path: "/consultanta",
@@ -53,4 +57,3 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-

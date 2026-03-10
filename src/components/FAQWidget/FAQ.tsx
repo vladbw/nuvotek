@@ -4,14 +4,25 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 export interface IFAQWidgetProps {
-  finalIndex: number;
+  questionIndexes?: number[];
   showRedirectSubtitle?: boolean;
 }
 
 export default function FAQ(props: IFAQWidgetProps) {
 
-  const translate = useTranslation().t;
+  const { t: translate, i18n } = useTranslation();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const translations = (i18n.getResourceBundle(i18n.language, "translation") ?? {}) as Record<string, unknown>;
+
+  const questionIndexes = props.questionIndexes && props.questionIndexes.length > 0
+    ? props.questionIndexes.filter((index, position, array) => (
+      Number.isInteger(index) && index > 0 && array.indexOf(index) === position
+    ))
+    : Object.keys(translations)
+      .map((key) => key.match(/^faq_q_(\d+)$/)?.[1])
+      .filter((value): value is string => value !== undefined)
+      .map(Number)
+      .sort((first, second) => first - second);
 
   const toggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -19,7 +30,7 @@ export default function FAQ(props: IFAQWidgetProps) {
 
   const renderSubTitle = () => {
     if (!props.showRedirectSubtitle) {
-      return <p className="faq-subtitle">{translate("faq_subtitle")}</p>;
+      return translate("faq_subtitle");
     }
 
     const text = translate("faq_subtitle_redirect");
@@ -28,11 +39,9 @@ export default function FAQ(props: IFAQWidgetProps) {
     const rest = words.join(" ");
 
     return (
-      <p className="faq-subtitle">
-        <Link to="/faq">
-          {rest} {lastWord && <span className="faq-redirect-last-word">{lastWord}</span>}
-        </Link>
-      </p>
+      <Link to="/faq">
+        {rest} {lastWord && <span className="faq-redirect-last-word">{lastWord}</span>}
+      </Link>
     );
   };
 
@@ -46,7 +55,7 @@ export default function FAQ(props: IFAQWidgetProps) {
       </p>
 
       <div className="faq-list">
-        {Array.from({ length: props.finalIndex }, (_, i) => i + 1).map((index) => (
+        {questionIndexes.map((index) => (
           <div
             key={index}
             className={`round-corners-nuvotek box-shadow-nuvotek faq-item ${openIndex === index ? "open" : ""}`}
