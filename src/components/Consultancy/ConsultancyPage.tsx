@@ -8,6 +8,7 @@ import FAQ from "../FAQWidget/FAQ";
 import ModuleList from "../ModuleList/ModuleList";
 import { CONSULTANCY_MODULE_SET_INDEXES, MODULE_SETS } from "../ModuleList/moduleSets";
 import InfoBox from "../Infobox/InfoBox";
+import PartnersSection from "../PartnersSection/PartnersSection";
 
 function ConsultancyPage() {
   const translate = useTranslation().t;
@@ -46,6 +47,7 @@ function ConsultancyPage() {
           />
           <ModuleList modules={MODULE_SETS[CONSULTANCY_MODULE_SET_INDEXES[1]]}/>
           <TestimonialsSection testimonials={TESTIMONIALS.slice(6)}/>
+          <PartnersSection />
           <FAQ questionIndexes={[20, 21, 22, 23, 24]} showRedirectSubtitle/>
   </div>;
 }
