@@ -7,6 +7,7 @@ import TESTIMONIALS from "../Testimonials/Testimonials";
 import FAQ from "../FAQWidget/FAQ";
 import ModuleList from "../ModuleList/ModuleList";
 import { CONSULTANCY_MODULE_SET_INDEXES, MODULE_SETS } from "../ModuleList/moduleSets";
+import InfoBox from "../Infobox/InfoBox";
 
 function ConsultancyPage() {
   const translate = useTranslation().t;
@@ -34,15 +35,16 @@ function ConsultancyPage() {
           imgSrc="./img1_consultancy.webp"
           imgAlt="Consultanta aplicat in strainatate"
           />
-          {CONSULTANCY_MODULE_SET_INDEXES.map((setIndex) => {
-            const modules = MODULE_SETS[setIndex];
-
-            if (!modules) {
-              return null;
-            }
-
-            return <ModuleList key={`consultancy-modules-${setIndex}`} modules={modules} />;
-          })}
+          <InfoBox
+            title={translate("consultancy_packages_title")}
+            text={translate("consultancy_packages_intro")}
+          />
+          <ModuleList modules={MODULE_SETS[CONSULTANCY_MODULE_SET_INDEXES[0]]}/>
+          <InfoBox
+            text={translate("consultancy_page_country_packages_intro")}
+            buttonLink="inscriu"
+          />
+          <ModuleList modules={MODULE_SETS[CONSULTANCY_MODULE_SET_INDEXES[1]]}/>
           <TestimonialsSection testimonials={TESTIMONIALS.slice(6)}/>
           <FAQ questionIndexes={[20, 21, 22, 23, 24]} showRedirectSubtitle/>
   </div>;
