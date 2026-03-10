@@ -3,32 +3,18 @@ import './ModuleList.css';
 import CheckBoxIcon from './CheckboxIcon';
 import { useTranslation } from 'react-i18next';
 
-interface ILearningModule {
+export interface ILearningModule {
     title: string;
-    subTitle: string;
+    subTitle?: string;
     learningOutcomes: string[];
 }
 
+interface IModuleListProps {
+    modules: [ILearningModule, ILearningModule, ILearningModule];
+}
 
-const ModuleList: React.FC = () => {
+const ModuleList: React.FC<IModuleListProps> = ({ modules }) => {
     const translate = useTranslation().t;
-    const modules: ILearningModule[] = [
-        {
-            title: "module_1_title",
-            subTitle: "module_1_subtitle",
-            learningOutcomes: ['module_1_outcome_1', 'module_1_outcome_2', 'module_1_outcome_3', 'module_1_outcome_4', 'module_1_outcome_5', 'module_1_outcome_6', 'module_1_outcome_7', 'module_1_outcome_8', 'module_outcome_others']
-        },
-        {
-            title: "module_2_title",
-            subTitle: "module_2_subtitle",
-            learningOutcomes: ['module_2_outcome_1', 'module_2_outcome_2', 'module_2_outcome_3', 'module_2_outcome_4', 'module_2_outcome_5', 'module_2_outcome_6', 'module_2_outcome_7', 'module_2_outcome_8', 'module_outcome_others']
-        },
-        {
-            title: "module_3_title",
-            subTitle: "module_3_subtitle",
-            learningOutcomes: ['module_3_outcome_1', 'module_3_outcome_2', 'module_3_outcome_3', 'module_3_outcome_4', 'module_3_outcome_5', 'module_3_outcome_6', 'module_3_outcome_7', 'module_3_outcome_8', 'module_outcome_others']
-        }
-    ];
 
       const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 

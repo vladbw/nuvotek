@@ -9,6 +9,7 @@ import { Gallery } from "../Gallery/Gallery";
 import { useTranslation } from "react-i18next";
 import FAQ from "../FAQWidget/FAQ";
 import TESTIMONIALS from "../Testimonials/Testimonials";
+import { HOMEPAGE_MODULE_SET_INDEX, MODULE_SETS } from "../ModuleList/moduleSets";
 
 function HomePage() {
   const translate = useTranslation().t;
@@ -44,7 +45,7 @@ function HomePage() {
           buttonLink="inscriu" 
           text={translate("course_structure_text")}
         />
-        <ModuleList/>
+        <ModuleList modules={MODULE_SETS[HOMEPAGE_MODULE_SET_INDEX]}/>
         <InfoSectionComponent 
           title={translate("course_org_title")}
           text={translate("course_org_text")}
