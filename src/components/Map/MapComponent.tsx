@@ -176,8 +176,8 @@ const containerStyle = {
   width: '100%',
   height: '400px',
   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1),              0 -4px 8px rgba(0, 0, 0, 0.05),               4px 0 8px rgba(0, 0, 0, 0.05),               -4px 0 8px rgba(0, 0, 0, 0.05)",
-  orderRadius: "8px"
-
+  borderRadius: "20px",
+  overflow: "hidden"
 };
 
 const center = {
