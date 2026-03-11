@@ -15,7 +15,7 @@ const InfoSectionWithPhotoMobile: React.FC<InfoSectionWithPhotoProps> = (props) 
                 <p key={`info-section-mobile-paragraph-${index}`}>{paragraph}</p>
             ))}
             <div className="navbar__cta">
-                <MainCtaButton />
+                <MainCtaButton preset={props.buttonPreset}/>
                 </div>
         </div>
     );

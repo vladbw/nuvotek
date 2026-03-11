@@ -9,6 +9,7 @@ import ModuleList from "../ModuleList/ModuleList";
 import { CONSULTANCY_MODULE_SET_INDEXES, MODULE_SETS } from "../ModuleList/moduleSets";
 import InfoBox from "../Infobox/InfoBox";
 import PartnersSection from "../PartnersSection/PartnersSection";
+import WhyUsSection from "../WhyUsSection/WhyUsSection";
 
 function ConsultancyPage() {
   const translate = useTranslation().t;
@@ -40,6 +41,7 @@ function ConsultancyPage() {
           imgAlt="Consultanta aplicat in strainatate"
           buttonPreset="consultancy"
           />
+          <WhyUsSection />
           <InfoBox
             title={translate("consultancy_packages_title")}
             text={translate("consultancy_packages_intro")}
