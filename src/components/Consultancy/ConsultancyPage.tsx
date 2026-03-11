@@ -10,6 +10,7 @@ import { CONSULTANCY_MODULE_SET_INDEXES, MODULE_SETS } from "../ModuleList/modul
 import InfoBox from "../Infobox/InfoBox";
 import PartnersSection from "../PartnersSection/PartnersSection";
 import WhyUsSection from "../WhyUsSection/WhyUsSection";
+import "./ConsultancyPage.css";
 
 function ConsultancyPage() {
   const translate = useTranslation().t;
@@ -46,7 +47,9 @@ function ConsultancyPage() {
             title={translate("consultancy_packages_title")}
             text={translate("consultancy_packages_intro")}
           />
-          <ModuleList modules={MODULE_SETS[CONSULTANCY_MODULE_SET_INDEXES[0]]}/>
+          <div className="consultancy-page-first-modules">
+            <ModuleList modules={MODULE_SETS[CONSULTANCY_MODULE_SET_INDEXES[0]]}/>
+          </div>
           <InfoBox
             text={translate("consultancy_page_country_packages_intro")}
             buttonLink="consultancy"
