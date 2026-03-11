@@ -94,6 +94,7 @@ export const MODULE_SETS: Record<number, ModuleSet> = {
   2: [
     {
       title: "consultancy_apply_uk_title",
+      headerFlag: "🇬🇧",
       learningOutcomes: [
         "consultancy_apply_uk_outcome_1",
         "consultancy_apply_uk_outcome_2",
@@ -107,6 +108,7 @@ export const MODULE_SETS: Record<number, ModuleSet> = {
     },
     {
       title: "consultancy_apply_spain_title",
+      headerFlag: "🇪🇸",
       learningOutcomes: [
         "consultancy_apply_spain_outcome_1",
         "consultancy_apply_spain_outcome_2",
@@ -120,6 +122,7 @@ export const MODULE_SETS: Record<number, ModuleSet> = {
     },
     {
       title: "consultancy_apply_italy_title",
+      headerFlag: "🇮🇹",
       learningOutcomes: [
         "consultancy_apply_italy_outcome_1",
         "consultancy_apply_italy_outcome_2",

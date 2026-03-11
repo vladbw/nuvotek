@@ -31,6 +31,28 @@
     flex-shrink: 1;
 }
 
+.single-module-header--with-flag {
+    position: relative;
+    overflow: hidden;
+}
+
+.single-module-title {
+    position: relative;
+    z-index: 1;
+}
+
+.single-module-header-flag {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 124px;
+    opacity: 0.13;
+    pointer-events: none;
+    user-select: none;
+    line-height: 1;
+}
+
 
 ul {
     list-style-type: none; 

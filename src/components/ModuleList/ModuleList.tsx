@@ -7,6 +7,7 @@ export interface ILearningModule {
     title: string;
     subTitle?: string;
     learningOutcomes: string[];
+    headerFlag?: string;
 }
 
 interface IModuleListProps {
@@ -33,8 +34,15 @@ const ModuleList: React.FC<IModuleListProps> = ({ modules }) => {
     const renderContents = () => {
         return modules.map((module: ILearningModule, index) => 
                 <div className="single-module box-shadow-nuvotek round-corners-nuvotek" key={`single-module-${index}`}>
-                    <h2>{translate(module.title)}</h2>
-                    {module.subTitle && <p>{translate(module.subTitle)}</p>}
+                    <div className={`single-module-header ${module.headerFlag ? "single-module-header--with-flag" : ""}`}>
+                        <h2 className="single-module-title">{translate(module.title)}</h2>
+                        {module.subTitle && <p className="single-module-subtitle">{translate(module.subTitle)}</p>}
+                        {module.headerFlag && (
+                            <span className="single-module-header-flag" aria-hidden="true">
+                                {module.headerFlag}
+                            </span>
+                        )}
+                    </div>
                     <div className='single-module-item-list'>
                         <ul>
                             {module.learningOutcomes.map((learningOutcome, loIndex) => <li className='module-checkbox-item' key={`single-module-outcome-${index}-${loIndex}`}><CheckBoxIcon/><p>{translate(learningOutcome)}</p></li>)}
