@@ -1,6 +1,7 @@
 import React from 'react';
 import './CreativeStudioSection.css';
 import { useTranslation } from 'react-i18next';
+import MainCtaButton from '../MainCtaButton/MainCtaButton';
 
 const CreativeStudioSection: React.FC = () => {
     const translate = useTranslation().t;
@@ -16,7 +17,7 @@ const CreativeStudioSection: React.FC = () => {
                     {translate("creative_studio_text_2")}
                 </p>
                 <div className="navbar__cta">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5Vz11lTctGTbPK9jPH9xLVRwrZSud37PyFpFDUAxRS82pZw/viewform" target="_blank" rel="noreferrer"><button className="navbar__button">{translate("register_cta")}</button></a>
+                    <MainCtaButton />
                 </div>
             </div>
             <div className="image-section">

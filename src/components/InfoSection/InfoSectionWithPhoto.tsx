@@ -1,26 +1,29 @@
 import React from 'react';
 import './InfoSectionWithPhoto.css';
-import { useTranslation } from 'react-i18next';
+import MainCtaButton, { MainCtaPreset } from '../MainCtaButton/MainCtaButton';
 
 export interface InfoSectionWithPhotoProps {
     title: string;
     subTitle?: string;
-    text: string;
+    text: string | string[];
     imgSrc: string;
     imgAlt: string;
+    buttonPreset?: MainCtaPreset;
 }
 
 const InfoSectionWithPhoto: React.FC<InfoSectionWithPhotoProps> = (props) => {
-    const translate = useTranslation().t;
+    const paragraphs = Array.isArray(props.text) ? props.text : [props.text];
 
     return (
         <div className="content-section width-70-large-res">
             <div className="content-section__text">
                 <h1 className='h1-nuvotek'>{props.title}</h1>
                 {props.subTitle ? <h2>{props.subTitle}</h2> : null}
-                <p>{props.text}</p>
+                {paragraphs.map((paragraph, index) => (
+                    <p key={`info-section-paragraph-${index}`}>{paragraph}</p>
+                ))}
                 <div className="navbar__cta">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5Vz11lTctGTbPK9jPH9xLVRwrZSud37PyFpFDUAxRS82pZw/viewform" target="_blank" rel="noreferrer"><button className="navbar__button">{translate("register_cta")}</button></a>
+                    <MainCtaButton preset={props.buttonPreset}/>
                 </div>
             </div>
             <div className="content-section__image">

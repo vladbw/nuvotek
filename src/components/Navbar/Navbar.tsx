@@ -3,6 +3,7 @@ import './Navbar.css';
 import MobileNavbar from "./MobileNavbar";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
+import MainCtaButton from "../MainCtaButton/MainCtaButton";
 
 function Navbar() {
     const translate = useTranslation().t;
@@ -22,7 +23,7 @@ function Navbar() {
                 <li><Link to="/contact">{translate("menu_item_3")}</Link></li>
                 <li>
                     <div className="navbar__cta">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5Vz11lTctGTbPK9jPH9xLVRwrZSud37PyFpFDUAxRS82pZw/viewform" target="_blank" rel="noreferrer"><button className="navbar__button">{translate("register_cta")}</button></a>
+                        <MainCtaButton />
                     </div>
                 </li>
                 <li>

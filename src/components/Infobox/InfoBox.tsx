@@ -2,8 +2,9 @@ import React from 'react';
 import './InfoBox.css';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import MainCtaButton from '../MainCtaButton/MainCtaButton';
 
-export type ButtonLink = 'inscriu' | 'planse';
+export type ButtonLink = 'inscriu' | 'planse' | 'consultancy';
 
 interface InfoBoxProps {
     title?: string;
@@ -18,13 +19,9 @@ const InfoBox: React.FC<InfoBoxProps> = (props) => {
 
     const renderCta = () => {
         if (props.buttonLink === 'inscriu') {
-            return (
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5Vz11lTctGTbPK9jPH9xLVRwrZSud37PyFpFDUAxRS82pZw/viewform" target="_blank" rel="noreferrer">
-                    <button className="navbar__button">
-                        {translate("register_cta")}
-                    </button>
-                </a>
-            );
+            return <MainCtaButton />;
+        } else if (props.buttonLink === 'consultancy') {
+            return <MainCtaButton preset='consultancy' />;
         } else {
             return (
                 <Link to="/planse">

@@ -32,9 +32,13 @@ function ConsultancyPage() {
   return <div className="consultancy-page-container">
             <InfoSectionComponent
           title={translate("consultancy_page_title")}
-          text={translate("consultancy_page_main_text")}
+          text={[
+            translate("consultancy_page_intro_text"),
+            translate("consultancy_page_main_text")
+          ]}
           imgSrc="./img1_consultancy.webp"
           imgAlt="Consultanta aplicat in strainatate"
+          buttonPreset="consultancy"
           />
           <InfoBox
             title={translate("consultancy_packages_title")}
@@ -43,7 +47,7 @@ function ConsultancyPage() {
           <ModuleList modules={MODULE_SETS[CONSULTANCY_MODULE_SET_INDEXES[0]]}/>
           <InfoBox
             text={translate("consultancy_page_country_packages_intro")}
-            buttonLink="inscriu"
+            buttonLink="consultancy"
           />
           <ModuleList modules={MODULE_SETS[CONSULTANCY_MODULE_SET_INDEXES[1]]}/>
           <TestimonialsSection testimonials={TESTIMONIALS.slice(6)}/>

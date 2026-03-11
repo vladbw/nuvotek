@@ -1,0 +1,66 @@
+/* Shared CTA look used across navbar/sections/info boxes. */
+.navbar__cta .navbar__button {
+  position: relative;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease-in-out;
+  letter-spacing: 1px;
+  text-wrap: nowrap;
+}
+
+.navbar__cta .navbar__button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  z-index: -1;
+  transition: width 0.5s ease, height 0.5s ease, top 0.5s ease, left 0.5s ease;
+  transform: translate(-50%, -50%);
+}
+
+.navbar__cta .navbar__button:hover::before {
+  width: 300%;
+  height: 300%;
+  top: 50%;
+  left: 50%;
+}
+
+.navbar__cta .navbar__button:hover {
+  color: white;
+}
+
+/* Presets for main CTA button. Keep separate modifiers for future style divergence. */
+.navbar__cta .main-cta-button--default {
+  background-color: #ff0000;
+  color: white;
+}
+
+.navbar__cta .main-cta-button--default::before {
+  background-color: rgba(121, 0, 0, 0.71);
+}
+
+.navbar__cta .main-cta-button--consultancy {
+  background-color: #e7e7e7;
+  color: #ff0000;
+  border: 2px solid #ff0000;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.navbar__cta .main-cta-button--consultancy::before {
+  background-color: #ff0000;
+}
+
+.navbar__cta .main-cta-button--consultancy:hover {
+  color: #ffffff;
+  box-shadow: 0 6px 14px rgba(255, 0, 0, 0.25);
+  transform: translateY(-1px);
+}
