@@ -4,6 +4,7 @@ import MobileNavbar from "./MobileNavbar";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 import MainCtaButton from "../MainCtaButton/MainCtaButton";
+import { NAV_ITEMS } from "./navItems";
 
 function Navbar() {
     const translate = useTranslation().t;
@@ -17,10 +18,11 @@ function Navbar() {
                 </div>
             </Link>
             <ul className="navbar__links">
-                <li><Link to="/despre-noi">{translate("menu_item_1")}</Link></li>
-                <li><Link to="/planse">{translate("menu_item_2")}</Link></li>
-                <li><Link to="/consultanta">{translate("menu_item_4")}</Link></li>
-                <li><Link to="/contact">{translate("menu_item_3")}</Link></li>
+                {NAV_ITEMS.map((item) => (
+                    <li key={item.to}>
+                        <Link to={item.to}>{translate(item.labelKey)}</Link>
+                    </li>
+                ))}
                 <li>
                     <div className="navbar__cta">
                         <MainCtaButton />
