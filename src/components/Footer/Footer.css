@@ -39,7 +39,19 @@
         }
 
         @media (max-width: 800px) {
-                flex-direction: row-reverse;
+                position: relative;
+                flex-direction: row;
+                justify-content: flex-start;
+                padding: 0 1rem;
+                min-height: 50px;
+
+                p {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: calc(100% - 7rem);
+                    text-align: center;
+                }
         }
     }
 }
