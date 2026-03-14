@@ -51,6 +51,7 @@ function ConsultancyPage() {
             <ModuleList modules={MODULE_SETS[CONSULTANCY_MODULE_SET_INDEXES[0]]}/>
           </div>
           <InfoBox
+            title={translate("consultancy_country_packages_title")}
             text={translate("consultancy_page_country_packages_intro")}
             buttonLink="consultancy"
           />

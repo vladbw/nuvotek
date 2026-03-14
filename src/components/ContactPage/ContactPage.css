@@ -39,18 +39,21 @@
 
 .contact-service-card__badge {
   margin: 0;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #e00000;
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: #c70000;
   text-transform: uppercase;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.18em;
+  line-height: 1.25;
 }
 
 .contact-service-card__title {
-  margin: 1.25rem 0 1.75rem;
-  font-size: 2.15rem;
+  margin: 1rem auto 1.55rem;
+  max-width: 15ch;
+  font-size: 1.92rem;
+  font-weight: 700;
+  line-height: 1.08;
   color: #1f2023;
-  text-transform: uppercase;
 }
 
 .contact-service-card__detail {
@@ -116,7 +119,7 @@
   }
 
   .contact-service-card__title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .contact-service-card__value {
@@ -136,6 +139,16 @@
 
   .contact-page-panel {
     padding: 1.5rem;
+  }
+
+  .contact-service-card__badge {
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+  }
+
+  .contact-service-card__title {
+    font-size: 1.55rem;
+    max-width: 100%;
   }
 
   .contact-page-grid {
